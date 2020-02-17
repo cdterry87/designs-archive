@@ -175,6 +175,10 @@ body {
   /**
     * When the "checkbox" is checked, remove the middle line, then roate the 
     * "before" and "after" lines to form an "X" for the menu close button.
+    **/
+  /**
+    * When the "checkbox" is checked, make the background fill the screen and 
+    * show it and the nav section from their hidden state.
     **/ }
   .navigation__checkbox {
     display: none; }
@@ -213,11 +217,11 @@ body {
     height: 5rem;
     width: 5rem;
     background-image: linear-gradient(to right top, #7100db, #18003f);
-    top: 50%;
+    top: -50rem;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    transition: transform .6s ease-in; }
+    transition: all .5s ease; }
   .navigation__nav {
     height: 100vh;
     position: fixed;
