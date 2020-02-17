@@ -12,10 +12,42 @@
     }
 }
 
+.info {
+    &__content {
+        height: 25rem;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    &__image {
+       
+    }
+}
+
 .details {
     margin-top: 8rem;
+
+    .detail {
+        background-color: $color-white;
+        box-shadow: 0 1rem 3rem rgba($color-black, .2);
+        padding: 3rem;
+        text-align: justify;
+
+        &__icon {
+            
+        }
+
+        &__content {
+
+        }
+    }
 }
 
 .message {
-
+    &__box {
+        background-color: $color-primary-light;
+        box-shadow: 0 1rem 3rem rgba($color-black, .2);
+        color: $color-white;
+        padding: 3rem;
+    }
 }
