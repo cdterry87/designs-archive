@@ -55,11 +55,11 @@
         height: 5rem;
         width: 5rem;
         background-image: linear-gradient(to right top, $color-primary-light, $color-primary-dark);
-        top: 50%;
+        top: -50rem;
         left: 50%;
         transform: translate(-50%, -50%);
         opacity: 0;
-        transition: transform .6s ease-in;
+        transition: all .5s ease;
     }
 
     &__nav {
@@ -122,6 +122,10 @@
         transform: rotate(-135deg);
     }
 
+    /**
+    * When the "checkbox" is checked, make the background fill the screen and 
+    * show it and the nav section from their hidden state.
+    **/
     &__checkbox:checked ~ &__background {
         transform: scale(85);
         opacity: 1;
