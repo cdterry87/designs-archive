@@ -209,13 +209,15 @@ body {
       top: 1rem; }
   .navigation__background {
     position: fixed;
-    top: 0;
-    right: 5.5rem;
     z-index: 1000;
     height: 5rem;
     width: 5rem;
     background-image: linear-gradient(to right top, #7100db, #18003f);
-    transition: transform .8s ease-in-out; }
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: transform .6s ease-in; }
   .navigation__nav {
     height: 100vh;
     position: fixed;
@@ -247,7 +249,8 @@ body {
     top: 0;
     transform: rotate(-135deg); }
   .navigation__checkbox:checked ~ .navigation__background {
-    transform: scale(85); }
+    transform: scale(85);
+    opacity: 1; }
   .navigation__checkbox:checked ~ .navigation__nav {
     opacity: 1;
     width: 100%; }

@@ -51,14 +51,15 @@
 
     &__background {
         position: fixed;
-        top: 0;
-        right: 5.5rem;;
         z-index: 1000;
         height: 5rem;
         width: 5rem;
         background-image: linear-gradient(to right top, $color-primary-light, $color-primary-dark);
-
-        transition: transform .8s ease-in-out;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: transform .6s ease-in;
     }
 
     &__nav {
@@ -123,7 +124,7 @@
 
     &__checkbox:checked ~ &__background {
         transform: scale(85);
-
+        opacity: 1;
     }
 
     &__checkbox:checked ~ &__nav {
