@@ -1,9 +1,17 @@
-@import 'base/base';
-
-@import 'components/';
-
-@import 'layout/';
-
-@import 'pages/home';
-
 @import 'utils/variables';
+@import 'utils/utilities';
+
+@import 'base/base';
+@import 'base/typography';
+@import 'base/animations';
+
+@import 'components/button';
+
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/navigation';
+
+@import 'pages/index';
+
+

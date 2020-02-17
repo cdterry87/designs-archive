@@ -1,0 +1,148 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #333; }
+
+.header__brand {
+  font-size: 3rem; }
+
+.heading-primary {
+  color: white;
+  text-transform: uppercase; }
+  .heading-primary > * {
+    display: block; }
+  .heading-primary--title {
+    font-size: 4rem;
+    letter-spacing: 1rem; }
+  .heading-primary--subtitle {
+    font-size: 1.5rem;
+    letter-spacing: .75rem; }
+
+.header {
+  height: 40rem;
+  background-image: linear-gradient(to right top, rgba(97, 0, 189, 0.8), rgba(24, 0, 63, 0.8)), url(../../images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  .header__brand {
+    position: absolute;
+    top: 1rem;
+    left: 5rem;
+    color: white; }
+  .header__content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+
+.navigation {
+  /**
+    * When the "checkbox" is checked, remove the middle line, then roate the 
+    * "before" and "after" lines to form an "X" for the menu close button.
+    **/ }
+  .navigation__checkbox {
+    display: none; }
+  .navigation__button {
+    background-color: white;
+    height: 6rem;
+    width: 6rem;
+    position: fixed;
+    top: 0;
+    right: 5rem;
+    z-index: 3000;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: all .2s; }
+  .navigation__checkbox:checked ~ .navigation__background {
+    transform: scale(85); }
+  .navigation__checkbox:checked ~ .navigation__nav {
+    opacity: 1;
+    width: 100%; }
+  .navigation__icon {
+    position: relative;
+    margin-top: 3rem; }
+    .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+      width: 3rem;
+      height: 3px;
+      background-color: #6100bd;
+      display: inline-block; }
+    .navigation__icon::before, .navigation__icon::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all .3s; }
+    .navigation__icon::before {
+      top: -1rem; }
+    .navigation__icon::after {
+      top: 1rem; }
+  .navigation__background {
+    position: fixed;
+    top: 0;
+    right: 5.5rem;
+    z-index: 1000;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background-image: linear-gradient(to right top, #6100bd, #18003f);
+    transition: transform .8s ease-in-out; }
+  .navigation__nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2000;
+    opacity: 0;
+    width: 0; }
+  .navigation__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center; }
+  .navigation__item {
+    margin: 1rem; }
+  .navigation__link {
+    display: inline-block; }
+  .navigation__button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.3); }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon {
+    background-color: transparent; }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+    top: 0;
+    transform: rotate(135deg); }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+    top: 0;
+    transform: rotate(-135deg); }
+
+.overlap {
+  position: absolute;
+  width: 80%;
+  height: 25rem;
+  background-color: white;
+  box-shadow: 0 1rem 6rem rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  padding: 3rem; }

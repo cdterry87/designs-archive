@@ -1,0 +1,26 @@
+.header {
+    height: 40rem;
+    background-image: linear-gradient(
+        to right top,
+        rgba($color-primary-light, .8),
+        rgba($color-primary-dark, .8)),
+        url(../../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    &__brand {
+        position: absolute;
+        top: 1rem;
+        left: 5rem;
+        color: $color-white;
+    }
+
+    &__content {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%); // center
+        text-align: center;
+    }
+}
