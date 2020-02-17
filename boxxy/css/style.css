@@ -1,3 +1,30 @@
+.center {
+  text-align: center; }
+
+.mt-1,
+.my-1 {
+  margin-top: 1rem; }
+
+.mt-2,
+.my-2 {
+  margin-top: 2rem; }
+
+.mt-3,
+.my-3 {
+  margin-top: 3rem; }
+
+.mb-1,
+.my-1 {
+  margin-bottom: 1rem; }
+
+.mb-2,
+.my-2 {
+  margin-bottom: 2rem; }
+
+.mb-3,
+.my-3 {
+  margin-bottom: 3rem; }
+
 *,
 *::after,
 *::before {
@@ -15,11 +42,22 @@ a {
   text-decoration: none;
   color: inherit; }
 
+p {
+  margin: 1.5rem 0; }
+
+.main {
+  position: relative; }
+
 body {
   font-family: sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #333; }
+  color: #333;
+  font-size: 1.6rem; }
+
+.navigation {
+  color: white;
+  font-size: 2rem; }
 
 .header__brand {
   font-size: 3rem; }
@@ -33,12 +71,89 @@ body {
     font-size: 4rem;
     letter-spacing: 1rem; }
   .heading-primary--subtitle {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     letter-spacing: .75rem; }
+
+.heading-secondary {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-image: linear-gradient(to top right, #7100db, #18003f);
+  display: inline-block;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all .2s; }
+  .heading-secondary:hover {
+    transform: scale(1.1); }
+
+.heading-tertiary {
+  font-size: 1.8rem; }
+
+.button, .button:link, .button:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  position: relative;
+  font-size: 1.6rem;
+  transition: all .2s; }
+  .button:hover, .button:link:hover, .button:visited:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2); }
+    .button:hover::after, .button:link:hover::after, .button:visited:hover::after {
+      transform: scaleX(1.1) scaleY(1.3);
+      opacity: 0; }
+  .button:active, .button:focus, .button:link:active, .button:link:focus, .button:visited:active, .button:visited:focus {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2); }
+
+.button--primary {
+  background-color: #5100ad;
+  color: white; }
+
+.button--white {
+  background-color: white;
+  color: #5100ad; }
+
+.button::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s; }
+
+.row {
+  max-width: 112rem;
+  margin: 0 auto; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row:not(:last-child) {
+    margin-bottom: 6rem; }
+  .row [class^="column-"] {
+    float: left; }
+    .row [class^="column-"]:not(:last-child) {
+      margin-right: 5rem; }
+  .row .column {
+    width: 100%; }
+  .row .column-half {
+    width: calc((100% - 5rem) / 2); }
+  .row .column-one-third {
+    width: calc((100% - 2 * 5rem) / 3); }
+  .row .column-one-quarter {
+    width: calc((100% - 3 * 5rem) / 4); }
 
 .header {
   height: 40rem;
-  background-image: linear-gradient(to right top, rgba(97, 0, 189, 0.8), rgba(24, 0, 63, 0.8)), url(../../images/hero.jpg);
+  width: 100%;
+  background-image: linear-gradient(to right top, rgba(113, 0, 219, 0.8), rgba(24, 0, 63, 0.8)), url(../../images/hero.jpg);
   background-size: cover;
   background-position: center;
   position: relative; }
@@ -48,6 +163,7 @@ body {
     left: 5rem;
     color: white; }
   .header__content {
+    width: 100%;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -55,6 +171,7 @@ body {
     text-align: center; }
 
 .navigation {
+  font-size: 3rem;
   /**
     * When the "checkbox" is checked, remove the middle line, then roate the 
     * "before" and "after" lines to form an "X" for the menu close button.
@@ -73,18 +190,13 @@ body {
     text-align: center;
     cursor: pointer;
     transition: all .2s; }
-  .navigation__checkbox:checked ~ .navigation__background {
-    transform: scale(85); }
-  .navigation__checkbox:checked ~ .navigation__nav {
-    opacity: 1;
-    width: 100%; }
   .navigation__icon {
     position: relative;
     margin-top: 3rem; }
     .navigation__icon, .navigation__icon::before, .navigation__icon::after {
       width: 3rem;
       height: 3px;
-      background-color: #6100bd;
+      background-color: #7100db;
       display: inline-block; }
     .navigation__icon::before, .navigation__icon::after {
       content: "";
@@ -102,8 +214,7 @@ body {
     z-index: 1000;
     height: 5rem;
     width: 5rem;
-    border-radius: 50%;
-    background-image: linear-gradient(to right top, #6100bd, #18003f);
+    background-image: linear-gradient(to right top, #7100db, #18003f);
     transition: transform .8s ease-in-out; }
   .navigation__nav {
     height: 100vh;
@@ -135,14 +246,22 @@ body {
   .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
     top: 0;
     transform: rotate(-135deg); }
+  .navigation__checkbox:checked ~ .navigation__background {
+    transform: scale(85); }
+  .navigation__checkbox:checked ~ .navigation__nav {
+    opacity: 1;
+    width: 100%; }
 
 .overlap {
-  position: absolute;
+  margin: -10rem auto 5rem auto;
   width: 80%;
-  height: 25rem;
+  min-height: 25rem;
   background-color: white;
-  box-shadow: 0 1rem 6rem rgba(0, 0, 0, 0.1);
-  margin: 0 auto;
-  left: 50%;
-  transform: translate(-50%, -40%);
+  box-shadow: 0 1rem 6rem rgba(0, 0, 0, 0.2);
   padding: 3rem; }
+  .overlap__content {
+    font-size: 1.4rem;
+    text-align: justify; }
+
+.details {
+  margin-top: 8rem; }

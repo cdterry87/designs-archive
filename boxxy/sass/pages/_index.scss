@@ -1,17 +1,19 @@
 .overlap {
-    position: absolute;
+    margin: -10rem auto 5rem auto;
     width: 80%;
-    height: 25rem;
+    min-height: 25rem;
     background-color: $color-white;
-    box-shadow: 0 1rem 6rem rgba($color-black, .1);
-    margin: 0 auto;
-    left: 50%;
-    transform: translate(-50%, -40%);
+    box-shadow: 0 1rem 6rem rgba($color-black, .2);
     padding: 3rem;
+
+    &__content {
+        font-size: 1.4rem;
+        text-align: justify;
+    }
 }
 
 .details {
-
+    margin-top: 8rem;
 }
 
 .message {

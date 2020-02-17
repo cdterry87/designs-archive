@@ -1,5 +1,6 @@
 .header {
     height: 40rem;
+    width: 100%;
     background-image: linear-gradient(
         to right top,
         rgba($color-primary-light, .8),
@@ -17,6 +18,7 @@
     }
 
     &__content {
+        width: 100%;
         position: absolute;
         top: 40%;
         left: 50%;

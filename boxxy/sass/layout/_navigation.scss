@@ -1,4 +1,6 @@
 .navigation {
+    font-size: 3rem;
+
     &__checkbox {
         display: none;
     }
@@ -15,15 +17,6 @@
         text-align: center;
         cursor: pointer;
         transition: all .2s;
-    }
-
-    &__checkbox:checked ~ &__background {
-        transform: scale(85);
-    }
-
-    &__checkbox:checked ~ &__nav {
-        opacity: 1;
-        width: 100%;
     }
 
     &__icon {
@@ -63,7 +56,6 @@
         z-index: 1000;
         height: 5rem;
         width: 5rem;
-        border-radius: 50%;
         background-image: linear-gradient(to right top, $color-primary-light, $color-primary-dark);
 
         transition: transform .8s ease-in-out;
@@ -127,5 +119,15 @@
     &__checkbox:checked + &__button &__icon::after {
         top: 0;
         transform: rotate(-135deg);
+    }
+
+    &__checkbox:checked ~ &__background {
+        transform: scale(85);
+
+    }
+
+    &__checkbox:checked ~ &__nav {
+        opacity: 1;
+        width: 100%;
     }
 }
