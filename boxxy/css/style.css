@@ -204,9 +204,11 @@ body {
     top: 1rem;
     left: 5rem;
     color: white; }
-  .header__link > * {
-    display: inline-block;
-    vertical-align: middle; }
+  .header__logo {
+    font-weight: 700; }
+    .header__logo > * {
+      display: inline-block;
+      vertical-align: middle; }
   .header__content {
     width: 100%;
     position: absolute;
@@ -258,6 +260,20 @@ body {
     * When the "checkbox" is checked, make the background fill the screen and 
     * show it and the nav section from their hidden state.
     **/ }
+  .navigation__logo {
+    width: 20rem;
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    transition: all .3s;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem; }
+    .navigation__logo > * {
+      display: block;
+      margin: 0 auto; }
+    .navigation__logo:hover {
+      transform: scale(1.1); }
   .navigation__checkbox {
     display: none; }
   .navigation__button {
@@ -316,9 +332,17 @@ body {
     list-style: none;
     text-align: center; }
   .navigation__item {
-    margin: 1rem; }
+    margin: 2rem; }
   .navigation__link {
     display: inline-block; }
+    .navigation__link:link, .navigation__link:visited {
+      transition: all .3s;
+      padding: 0 3rem; }
+    .navigation__link:hover, .navigation__link:active {
+      transform: scale(1.1);
+      background-color: white;
+      color: #60c2c4;
+      font-weight: 700; }
   .navigation__button:hover {
     transform: scale(1.1);
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.3); }

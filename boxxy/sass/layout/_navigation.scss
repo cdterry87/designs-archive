@@ -1,6 +1,26 @@
 .navigation {
     font-size: 3rem;
 
+    &__logo {
+        width: 20rem;
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+        transition: all .3s;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5rem;
+
+        & > * {
+            display: block;
+            margin: 0 auto;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
     &__checkbox {
         display: none;
     }
@@ -82,7 +102,7 @@
     }
 
     &__item {
-        margin: 1rem;
+        margin: 2rem;
     }
 
     &__link {
@@ -90,12 +110,16 @@
 
         &:link,
         &:visited {
-
+            transition: all .3s;
+            padding: 0 3rem;
         }
 
         &:hover,
         &:active {
-
+            transform: scale(1.1);
+            background-color: $color-white;
+            color: $color-secondary;
+            font-weight: 700;
         }
     }
 
