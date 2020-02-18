@@ -1,0 +1,58 @@
+.footer {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &__logo {
+        margin: 0 auto;
+        transition: all .3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__title {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-top: -1.5rem;
+        color: $color-white;
+    }
+
+    &__navigation {
+
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+    }
+
+    &__link {
+        display: block;
+        
+        &,
+        &:link,
+        &:visited {
+            transition: all .3s;
+            padding: .5rem 1rem;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            color: $color-secondary;
+            border-bottom: solid 1px $color-secondary;
+        }
+    }
+
+    &__copyright {
+        margin-top: 3rem;
+        font-size: 1.2rem;
+    }
+}
