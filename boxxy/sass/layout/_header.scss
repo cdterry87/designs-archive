@@ -17,6 +17,13 @@
         color: $color-white;
     }
 
+    &__link {
+        & > * {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
     &__content {
         width: 100%;
         position: absolute;

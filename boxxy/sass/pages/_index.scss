@@ -14,13 +14,18 @@
 
 .info {
     &__content {
-        height: 25rem;
+        height: 45rem;
         display: table-cell;
         vertical-align: middle;
     }
 
     &__image {
-       
+       width: 85%;
+
+    }
+
+    &__paragraph {
+        text-align: justify;
     }
 }
 
@@ -31,14 +36,9 @@
         background-color: $color-white;
         box-shadow: 0 1rem 3rem rgba($color-black, .2);
         padding: 3rem;
-        text-align: justify;
-
-        &__icon {
-            
-        }
 
         &__content {
-
+            text-align: justify;
         }
     }
 }

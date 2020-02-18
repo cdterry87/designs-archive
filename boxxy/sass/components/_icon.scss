@@ -1,0 +1,19 @@
+.icon {
+    &--logo {
+        fill: $color-white;
+        height: 5rem;
+        width: 5rem;
+    }
+
+    &--detail {
+        fill: $color-secondary;
+        height: 9rem;
+        width: 9rem;
+    }
+
+    &--primary {
+        fill: $color-primary;
+        height: 3rem;
+        width: 3rem;
+    }
+}
