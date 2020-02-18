@@ -3,6 +3,7 @@
     color: $color-white;
 
     &__logo {
+        width: 20rem;
         margin: 0 auto;
         transition: all .3s;
 
@@ -16,10 +17,6 @@
         font-weight: 700;
         margin-top: -1.5rem;
         color: $color-white;
-    }
-
-    &__navigation {
-
     }
 
     &__list {
@@ -36,7 +33,7 @@
 
     &__link {
         display: block;
-        
+
         &,
         &:link,
         &:visited {
@@ -47,7 +44,7 @@
         &:hover {
             transform: scale(1.1);
             color: $color-secondary;
-            border-bottom: solid 1px $color-secondary;
+            border-bottom: solid 2px $color-secondary;
         }
     }
 

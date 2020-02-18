@@ -21,7 +21,6 @@
 
     &__image {
        width: 85%;
-
     }
 
     &__paragraph {
@@ -44,8 +43,7 @@
 
         &:hover {
             transform: translateY(-.5rem);
-            box-shadow: 0 2rem 4rem rgba($color-black, .4);
-
+            box-shadow: 0 2rem 3rem rgba($color-black, .3);
         }
     }
 }
