@@ -1,6 +1,9 @@
 .center {
   text-align: center; }
 
+.right {
+  text-align: right; }
+
 .mt-1,
 .my-1 {
   margin-top: 1rem; }
@@ -90,14 +93,15 @@ body {
     letter-spacing: 1rem; }
     @media only screen and (max-width: 35em) {
       .heading-primary--title {
-        font-size: 2rem;
-        margin-bottom: 1.2rem; } }
+        font-size: 3.2rem;
+        margin-bottom: 1.2rem;
+        line-height: 1.4; } }
   .heading-primary--subtitle {
     font-size: 2.2rem;
     letter-spacing: .75rem; }
     @media only screen and (max-width: 35em) {
       .heading-primary--subtitle {
-        font-size: 1.5rem; } }
+        font-size: 1.6rem; } }
 
 .heading-secondary {
   font-size: 2.2rem;
@@ -113,7 +117,7 @@ body {
     transform: scale(1.1); }
   @media only screen and (max-width: 35em) {
     .heading-secondary {
-      font-size: 1.5rem; } }
+      font-size: 2rem; } }
 
 .heading-tertiary {
   font-size: 2rem;
@@ -121,7 +125,7 @@ body {
   color: #00c4b7; }
   @media only screen and (max-width: 35em) {
     .heading-tertiary {
-      font-size: 1.2rem; } }
+      font-size: 1.8rem; } }
 
 .button, .button:link, .button:visited {
   text-transform: uppercase;
@@ -189,7 +193,7 @@ body {
 .row {
   max-width: 112rem;
   margin: 0 auto; }
-  @media only screen and (max-width: 35em) {
+  @media only screen and (max-width: 75em) {
     .row {
       padding: 0 3rem; } }
   .row::after {
@@ -202,11 +206,11 @@ body {
     float: left; }
     .row [class^="column-"]:not(:last-child) {
       margin-right: 5rem; }
-      @media only screen and (max-width: 35em) {
+      @media only screen and (max-width: 55em) {
         .row [class^="column-"]:not(:last-child) {
           margin-right: 0;
           margin-bottom: 2rem; } }
-    @media only screen and (max-width: 35em) {
+    @media only screen and (max-width: 55em) {
       .row [class^="column-"] {
         width: 100% !important; } }
   .row .column {
@@ -230,7 +234,7 @@ body {
     top: 1rem;
     left: 5rem;
     color: white; }
-    @media only screen and (max-width: 35em) {
+    @media only screen and (max-width: 55em) {
       .header__brand {
         left: 1rem;
         font-size: 2.5rem; } }
@@ -320,7 +324,7 @@ body {
     cursor: pointer;
     transition: all .2s;
     user-select: none; }
-    @media only screen and (max-width: 35em) {
+    @media only screen and (max-width: 55em) {
       .navigation__button {
         right: 1rem; } }
   .navigation__icon {
@@ -408,7 +412,11 @@ body {
   box-shadow: 0 1rem 6rem rgba(0, 0, 0, 0.2);
   padding: 3rem; }
   .overlap__content {
-    text-align: justify; }
+    text-align: justify;
+    font-size: 1.4rem; }
+  @media only screen and (max-width: 35em) {
+    .overlap {
+      width: 90% !important; } }
 
 .info__content {
   height: 45rem;
