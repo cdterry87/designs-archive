@@ -104,7 +104,7 @@ body {
         font-size: 1.6rem; } }
 
 .heading-secondary {
-  font-size: 2.2rem;
+  font-size: 3rem;
   text-transform: uppercase;
   font-weight: 600;
   background-image: linear-gradient(to top right, #7100db, #18003f);
@@ -120,12 +120,15 @@ body {
       font-size: 2rem; } }
 
 .heading-tertiary {
-  font-size: 2rem;
+  font-size: 2.8rem;
   font-weight: 400;
-  color: #00c4b7; }
+  color: #00c4b7;
+  text-shadow: 1px 2px #1aa39a;
+  font-style: italic; }
   @media only screen and (max-width: 35em) {
     .heading-tertiary {
-      font-size: 1.8rem; } }
+      font-size: 1.8rem;
+      text-shadow: none; } }
 
 .button, .button:link, .button:visited {
   text-transform: uppercase;
@@ -147,7 +150,7 @@ body {
   padding: 1.5rem 4rem; }
 
 .button--secondary {
-  border: solid 1px #03bdb0;
+  border: solid 1px #1aa39a;
   background-color: #00c4b7;
   color: white;
   padding: 1rem 2.5rem; }
