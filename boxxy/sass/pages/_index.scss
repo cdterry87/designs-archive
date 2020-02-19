@@ -8,6 +8,11 @@
 
     &__content {
         text-align: justify;
+        font-size: 1.4rem;
+    }
+
+    @include adapt(phone) {
+        width: 90% !important;
     }
 }
 

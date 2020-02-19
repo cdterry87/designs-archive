@@ -34,8 +34,9 @@ body {
         letter-spacing: 1rem;
 
         @include adapt(phone) {
-            font-size: 2rem;
+            font-size: 3.2rem;
             margin-bottom: 1.2rem;
+            line-height: 1.4;
         }
     }
 
@@ -44,7 +45,7 @@ body {
         letter-spacing: .75rem;
 
         @include adapt(phone) {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
         }
     }
 }
@@ -65,7 +66,7 @@ body {
     }
 
     @include adapt(phone) {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
 }
@@ -76,6 +77,6 @@ body {
     color: $color-secondary;
 
     @include adapt(phone) {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
 }
