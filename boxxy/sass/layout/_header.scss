@@ -38,5 +38,9 @@
         left: 50%;
         transform: translate(-50%, -50%); // center
         text-align: center;
+
+        @include adapt(tablet) {
+            padding: 0 3rem;
+        }
     }
 }

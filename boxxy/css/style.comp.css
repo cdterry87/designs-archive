@@ -253,6 +253,9 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+    @media only screen and (max-width: 55em) {
+      .header__content {
+        padding: 0 3rem; } }
 
 .footer {
   background-color: #5100ad;
