@@ -1,0 +1,25 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin adapt($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 35em) { @content };
+    }
+
+    @if $breakpoint == tablet {
+        @media only screen and (max-width: 55em) { @content };
+    }
+
+    @if $breakpoint == desktop {
+        @media only screen and (max-width: 75em) { @content };
+    }
+
+    @if $breakpoint == wide {
+        @media only screen and (min-width: 100em) { @content };
+    }
+}

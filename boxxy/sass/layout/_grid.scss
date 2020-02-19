@@ -2,6 +2,10 @@
     max-width: $grid-width;
     margin: 0 auto;
 
+    @include adapt(phone) {
+        padding: 0 3rem;
+    }
+
     @include clearfix;
 
     &:not(:last-child) {
@@ -13,6 +17,15 @@
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
+
+            @include adapt(phone) {
+                margin-right: 0;
+                margin-bottom: 2rem;
+            }
+        }
+
+        @include adapt(phone) {
+            width: 100% !important;
         }
     }
 

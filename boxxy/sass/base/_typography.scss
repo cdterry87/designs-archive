@@ -4,6 +4,10 @@ body {
     line-height: 1.7;
     color: $color-grey-dark;
     font-size: $default-font-size;
+
+    @include adapt(phone) {
+        font-size: 1.2rem;
+    }
 }
 
 .navigation {
@@ -28,11 +32,20 @@ body {
     &--title {
         font-size: 4rem;
         letter-spacing: 1rem;
+
+        @include adapt(phone) {
+            font-size: 2rem;
+            margin-bottom: 1.2rem;
+        }
     }
 
     &--subtitle {
         font-size: 2.2rem;
         letter-spacing: .75rem;
+
+        @include adapt(phone) {
+            font-size: 1.5rem;
+        }
     }
 }
 
@@ -50,10 +63,19 @@ body {
     &:hover {
         transform: scale(1.1);
     }
+
+    @include adapt(phone) {
+        font-size: 1.5rem;
+    }
+
 }
 
 .heading-tertiary {
     font-size: 2rem;
     font-weight: 400;
     color: $color-secondary;
+
+    @include adapt(phone) {
+        font-size: 1.2rem;
+    }
 }

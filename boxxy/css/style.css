@@ -69,6 +69,9 @@ body {
   line-height: 1.7;
   color: #333;
   font-size: 1.6rem; }
+  @media only screen and (max-width: 35em) {
+    body {
+      font-size: 1.2rem; } }
 
 .navigation {
   color: white;
@@ -85,9 +88,16 @@ body {
   .heading-primary--title {
     font-size: 4rem;
     letter-spacing: 1rem; }
+    @media only screen and (max-width: 35em) {
+      .heading-primary--title {
+        font-size: 2rem;
+        margin-bottom: 1.2rem; } }
   .heading-primary--subtitle {
     font-size: 2.2rem;
     letter-spacing: .75rem; }
+    @media only screen and (max-width: 35em) {
+      .heading-primary--subtitle {
+        font-size: 1.5rem; } }
 
 .heading-secondary {
   font-size: 2.2rem;
@@ -101,11 +111,17 @@ body {
   transition: all .2s; }
   .heading-secondary:hover {
     transform: scale(1.1); }
+  @media only screen and (max-width: 35em) {
+    .heading-secondary {
+      font-size: 1.5rem; } }
 
 .heading-tertiary {
   font-size: 2rem;
   font-weight: 400;
   color: #00c4b7; }
+  @media only screen and (max-width: 35em) {
+    .heading-tertiary {
+      font-size: 1.2rem; } }
 
 .button, .button:link, .button:visited {
   text-transform: uppercase;
@@ -173,6 +189,9 @@ body {
 .row {
   max-width: 112rem;
   margin: 0 auto; }
+  @media only screen and (max-width: 35em) {
+    .row {
+      padding: 0 3rem; } }
   .row::after {
     content: "";
     display: table;
@@ -183,6 +202,13 @@ body {
     float: left; }
     .row [class^="column-"]:not(:last-child) {
       margin-right: 5rem; }
+      @media only screen and (max-width: 35em) {
+        .row [class^="column-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 2rem; } }
+    @media only screen and (max-width: 35em) {
+      .row [class^="column-"] {
+        width: 100% !important; } }
   .row .column {
     width: 100%; }
   .row .column-half {
@@ -333,6 +359,10 @@ body {
     transform: translate(-50%, -50%);
     list-style: none;
     text-align: center; }
+    @media only screen and (max-width: 35em) {
+      .navigation__list {
+        width: 100% !important;
+        font-size: 2.5rem; } }
   .navigation__item {
     margin: 2rem; }
   .navigation__link {
@@ -371,7 +401,6 @@ body {
   box-shadow: 0 1rem 6rem rgba(0, 0, 0, 0.2);
   padding: 3rem; }
   .overlap__content {
-    font-size: 1.4rem;
     text-align: justify; }
 
 .info__content {
