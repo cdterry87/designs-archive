@@ -241,11 +241,12 @@ body {
     display: block; }
     .footer__link, .footer__link:link, .footer__link:visited {
       transition: all .3s;
-      padding: .5rem 1rem; }
+      padding: .5rem 1rem;
+      border-bottom: solid 2px transparent; }
     .footer__link:hover {
       transform: scale(1.1);
       color: #00c4b7;
-      border-bottom: solid 2px #00c4b7; }
+      border-color: #00c4b7; }
   .footer__copyright {
     margin-top: 3rem;
     font-size: 1.2rem; }
@@ -287,7 +288,8 @@ body {
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
     text-align: center;
     cursor: pointer;
-    transition: all .2s; }
+    transition: all .2s;
+    user-select: none; }
   .navigation__icon {
     position: relative;
     margin-top: 3rem; }

@@ -37,6 +37,7 @@
         text-align: center;
         cursor: pointer;
         transition: all .2s;
+        user-select: none;
     }
 
     &__icon {
