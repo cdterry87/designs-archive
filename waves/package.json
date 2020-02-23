@@ -4,11 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "node-sass sass/main.scss css/style.css -w",
+    "live": "live-server",
+    "dev": "npm-run-all --parallel live watch",
+    "compile": "node-sass sass/main.scss css/style.comp.css",
+    "prefix": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
+    "compress": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build": "npm-run-all compile prefix compress"
   },
   "author": "Chase Terry",
   "license": "ISC",
-  "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^9.7.4",
     "node-sass": "^4.13.1",
