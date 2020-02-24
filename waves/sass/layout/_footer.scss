@@ -1,0 +1,17 @@
+.footer {
+    background-color: $color-primary;
+    color: $color-white;
+    text-align: right;
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+    }
+}
