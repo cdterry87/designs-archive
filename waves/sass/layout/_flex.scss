@@ -1,8 +1,15 @@
 .row {
     display: flex; 
     flex-direction: row; 
-    justify-content: space-around;
-    padding: 3rem;
+
+    &--even {
+        justify-content: space-evenly;
+    }
+
+    &--center {
+        justify-content: center;
+
+    }
 }
 
 .column {
