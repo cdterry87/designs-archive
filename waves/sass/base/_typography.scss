@@ -1,0 +1,46 @@
+body {
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-grey-dark;
+    font-size: $default-font-size;
+}
+
+.navigation {
+    color: $color-white;
+    font-size: 2rem;
+}
+
+.header {
+    &__logo {
+        color: $color-white;
+        font-size: 3rem;
+    }
+}
+
+.heading-primary {
+    color: $color-white;
+    font-size: 4rem;
+    text-transform: uppercase;
+
+    & > * {
+        display: block;
+    }
+
+    &--title {
+        font-size: 4rem;
+    }
+
+    &--subtitle {
+        font-size: 3rem;
+    }
+}
+
+.heading-secondary {
+    text-transform: uppercase;
+    font-size: 2.6rem;
+}
+
+.heading-tertiary {
+    font-size: 2rem;
+}
