@@ -1,20 +1,15 @@
 .row {
     display: flex; 
     flex-direction: row; 
+    justify-content: space-evenly;
 
-    &--even {
-        justify-content: space-evenly;
-    }
-
-    &--center {
-        justify-content: center;
-        align-items: center;
+    @include res(tablet) {
+        flex-direction: column;
     }
 }
 
-.column {
+.columns {
     display: flex; 
     flex-direction: column; 
-    padding: 3rem;
 }
 
