@@ -1,0 +1,17 @@
+@mixin res($bp) {
+    @if $bp == phone {
+        @media only screen and (max-width: 35em) { @content };
+    }
+
+    @if $bp == tablet {
+        @media only screen and (max-width: 55em) { @content };
+    }
+
+    @if $bp == desktop {
+        @media only screen and (max-width: 75em) { @content };
+    }
+
+    @if $bp == wide {
+        @media only screen and (min-width: 76em) { @content };
+    }
+}
