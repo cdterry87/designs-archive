@@ -4,8 +4,11 @@
     box-shadow: 0 1rem 1rem rgba($color-black, .1);
     padding: 5rem;
     margin: 0 auto;
-    display: flex;
-    flex-direction: row;
+
+    @include res(desktop) {
+        width: 90%;
+        text-align: center;
+    }
 
     & > * {
         margin: 0 1rem;
@@ -13,13 +16,59 @@
 
     &__photo {
         height: 100%;
-        width: 65rem;
+        width: 45rem;
         border-radius: 50%;
         transition: all .2s;
+
+        @include res(tablet) {
+            width: 15rem;
+            margin: 1rem auto;
+        }
 
         &:hover {
             transform: scale(1.1);
             box-shadow: 0 1rem 1rem rgba($color-black, .1);
+        }
+    }
+}
+
+.reviews {
+    padding: 10rem 0;
+    position: relative;
+
+    @include res(desktop) {
+        padding: 5rem 0;
+    }
+
+    .review {
+        background-color: rgba($color-white, .75);
+        width: 60%;
+        margin: 2rem auto;
+        padding: 3rem;
+        border-radius: 5px;
+        box-shadow: 0 1rem 1rem rgba($color-black, .1);
+
+        @include res(desktop) {
+            width: 90%;
+        }
+
+        &__title {
+            font-weight: bold;
+            text-transform: uppercase;
+            color: $color-secondary;
+            font-size: 1.6rem;
+            font-style: italic;
+        }
+
+        &__content {
+            margin: 1rem 0;
+            font-size: 1.4rem;
+        }
+
+        &__user {
+            font-size: 1.2rem;
+            color: $color-grey;
+            text-align: right;
         }
     }
 }
