@@ -9,7 +9,8 @@
     border-radius: 5rem;
 
     &:hover {
-        transform: translateY(-.5rem);
+        font-weight: 300;
+        transform: scale(1.1);
         box-shadow: 0 1rem 1rem rgba($color-black, .1);
     }
 

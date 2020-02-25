@@ -33,12 +33,14 @@ body {
 
     &--subtitle {
         font-size: 3rem;
+        font-weight: 200;
     }
 }
 
 .heading-secondary {
     text-transform: uppercase;
     font-size: 2.6rem;
+    color: $color-secondary;
 }
 
 .heading-tertiary {

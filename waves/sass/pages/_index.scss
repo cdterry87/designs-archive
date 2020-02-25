@@ -1,3 +1,25 @@
 .info {
-    width: 75rem;
+    width: 65%;
+    border: solid 1px $color-grey-light;
+    box-shadow: 0 1rem 1rem rgba($color-black, .1);
+    padding: 5rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+
+    & > * {
+        margin: 0 1rem;
+    }
+
+    &__photo {
+        height: 100%;
+        width: 65rem;
+        border-radius: 50%;
+        transition: all .2s;
+
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 0 1rem 1rem rgba($color-black, .1);
+        }
+    }
 }
