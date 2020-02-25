@@ -1,7 +1,7 @@
 .navigation {
     font-size: 3rem;
 
-    &__logo {
+    &__brand {
         width: 20rem;
         display: block;
         text-align: center;
@@ -21,6 +21,10 @@
         }
     }
 
+    &__icon {
+        font-size: 6rem;
+    }
+
     &__checkbox {
         display: none;
     }
@@ -33,15 +37,20 @@
         top: 2rem;
         right: 4rem;
         z-index: 3000;
-        box-shadow: 0 1rem 3rem rgba($color-black, .1);
+        box-shadow: 0 .5rem .5rem rgba($color-black, .2);
         text-align: center;
         cursor: pointer;
         transition: all .2s;
         user-select: none;
         border-radius: 50%;
+
+        @include res(tablet) {
+            top: 1rem;
+            right: 2rem;
+        }
     }
 
-    &__icon {
+    &__toggle {
         position: relative;
         margin-top: 3rem;
 
@@ -77,11 +86,12 @@
         height: 5rem;
         width: 5rem;
         background-color: $color-primary;
-        top: -50rem;
+        border-radius: 50%;
+        top: 5rem;
         left: 50%;
         transform: translate(-50%, -50%);
         opacity: 0;
-        transition: all .5s ease;
+        transition: all .8s ease;
     }
 
     &__nav {
@@ -101,6 +111,11 @@
         transform: translate(-50%, -50%);
         list-style: none;
         text-align: center;
+        border-top: solid 1px $color-white;
+
+        @include res(tablet) {
+            width: 100%;
+        }
     }
 
     &__item {
@@ -120,32 +135,36 @@
         &:active {
             transform: scale(1.1);
             background-color: $color-white;
-            color: $color-secondary;
+            color: $color-tertiary;
             font-weight: 700;
+            border-radius: 10rem;
+            box-shadow: 0 .5rem .5rem rgba($color-black, .1);
         }
     }
 
     &__button:hover {
         transform: scale(1.1);
-        box-shadow: 0 2rem 5rem rgba($color-black, .3);
+        box-shadow: 0 1rem 1rem rgba($color-black, .3);
     }
 
     /**
     * When the "checkbox" is checked, remove the middle line, then roate the 
     * "before" and "after" lines to form an "X" for the menu close button.
     **/
-    &__checkbox:checked + &__button &__icon {
+    &__checkbox:checked + &__button &__toggle {
         background-color: transparent;
     }
 
-    &__checkbox:checked + &__button &__icon::before {
+    &__checkbox:checked + &__button &__toggle::before {
         top: 0;
         transform: rotate(135deg);
+        background-color: $color-tertiary;
     }
 
-    &__checkbox:checked + &__button &__icon::after {
+    &__checkbox:checked + &__button &__toggle::after {
         top: 0;
         transform: rotate(-135deg);
+        background-color: $color-tertiary;
     }
 
     /**
@@ -160,5 +179,6 @@
     &__checkbox:checked ~ &__nav {
         opacity: 1;
         width: 100%;
+        transition: opacity .9s ease-in;
     }
 }
