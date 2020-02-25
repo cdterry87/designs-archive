@@ -1,33 +1,41 @@
 .info {
-    width: 65%;
-    border: solid 1px $color-grey-light;
-    box-shadow: 0 1rem 1rem rgba($color-black, .1);
-    padding: 5rem;
-    margin: 0 auto;
+    padding: 5rem 10rem; 
 
     @include res(desktop) {
-        width: 90%;
+        width: 100%;
         text-align: center;
+        padding: 0;
     }
 
     & > * {
         margin: 0 1rem;
     }
 
+    &__content {
+        padding: 5rem;
+
+        @include res(desktop) {
+            padding: 2rem;
+            order: 2;
+        }
+    }
+
     &__photo {
         height: 100%;
-        width: 45rem;
+        width: 90%;
         border-radius: 50%;
         transition: all .2s;
+        box-shadow: 0 .5rem .5rem rgba($color-black, .1);
 
         @include res(tablet) {
-            width: 15rem;
+            width: 20rem;
             margin: 1rem auto;
+            order: 1;
         }
 
         &:hover {
-            transform: scale(1.1);
-            box-shadow: 0 1rem 1rem rgba($color-black, .1);
+            transform: scale(1.05);
+            box-shadow: 0 1rem 1rem rgba($color-black, .2);
         }
     }
 }
@@ -55,7 +63,7 @@
         &__title {
             font-weight: bold;
             text-transform: uppercase;
-            color: $color-secondary;
+            color: $color-tertiary;
             font-size: 1.6rem;
             font-style: italic;
         }
