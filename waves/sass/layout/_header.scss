@@ -1,12 +1,18 @@
 .header {
     background-color: $color-primary;
 
-    &__logo {
+    &__brand {
         position: absolute;
         top: 3rem;
         left: 4rem;
+
+        @include res(tablet) {
+            top: 1rem;
+            left: 2rem;
+        }
     }
 
-    &__content {
+    &__icon {
+        margin-right: .25rem;
     }
 }

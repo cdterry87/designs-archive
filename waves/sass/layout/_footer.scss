@@ -1,7 +1,20 @@
 .footer {
     background-color: $color-primary;
     color: $color-white;
-    text-align: right;
+    text-align: center;
+    padding: 0 2rem 3rem 2rem;
+
+    &__brand {
+        font-size: 2rem;
+
+        & > * {
+            display: block;
+        }
+    }
+
+    &__icon {
+        font-size: 6rem;
+    }
 
     &__list {
         list-style: none;
@@ -13,5 +26,27 @@
         &:not(:last-child) {
             margin-right: 3rem;
         }
+    }
+
+    &__link {
+        display: block;
+
+        &,
+        &:link,
+        &:visited {
+            border: solid 5px transparent;
+            transition: all .3s ease;
+        }
+
+        &:hover,
+        &:active {
+            transform: scale(1.2);
+            color: $color-white;
+            border-bottom: solid 5px $color-secondary;
+        }
+    }
+
+    &__copyright {
+        font-size: 1.2rem;
     }
 }

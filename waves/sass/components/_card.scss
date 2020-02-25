@@ -5,12 +5,19 @@
     transition: all .3s ease;
     height: 55rem;
     width: 100%;
-    margin: 0 3rem;
     position: relative;
+    margin: 0 3rem;
+
+    @include res(tablet) {
+        margin: 3rem auto;
+        width: 90%;
+    }
 
     &:hover {
-        transform: scale(1.05);
-        box-shadow: 0 1rem 1rem rgba($color-black, .2);
+        @include res(wide) {
+            transform: scale(1.05);
+            box-shadow: 0 1rem 1rem rgba($color-black, .2);
+        }
     }
 
     &__photo {
@@ -43,7 +50,7 @@
         font-weight: 700;
         font-size: 2rem;
         width: 100%;
-        z-index: 999999;
+        z-index: 99;
         width: 60%;
         box-shadow: 0 .5rem .5rem rgba($color-black, .1);
         background-color: $color-white;
