@@ -1,0 +1,29 @@
+.button {
+    padding: 2rem 4rem;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 200;
+    cursor: pointer;
+    transition: all .2s;
+    border-radius: 5rem;
+
+    &:hover {
+        transform: translateY(-.5rem);
+        box-shadow: 0 1rem 1rem rgba($color-black, .1);
+    }
+
+    &--small {
+        font-size: 1.4rem;
+        padding: 1.2rem 4rem;
+    }
+
+    &--white {
+        background-color: $color-white;
+    }
+
+    &--primary {
+        color: $color-white;
+        background-color: $color-primary;
+    }
+}
