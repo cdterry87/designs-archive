@@ -441,8 +441,7 @@ body {
     transition: opacity .9s ease-in; }
 
 .info {
-  padding: 0 10rem;
-  flex: 2 1 auto; }
+  padding: 0 10rem; }
   @media only screen and (max-width: 75em) {
     .info {
       width: 100%;
