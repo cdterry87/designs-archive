@@ -1,5 +1,6 @@
 .info {
     padding: 0 10rem; 
+    flex: 2 1 auto;
 
     @include res(desktop) {
         width: 100%;
@@ -14,9 +15,15 @@
     &__content {
         padding: 5rem;
 
-        @include res(desktop) {
+        @include res(tablet) {
             padding: 2rem;
             order: 2;
+        }
+    }
+
+    &__image {
+        @include res(tablet) {
+            order: 1;
         }
     }
 
@@ -28,9 +35,8 @@
         box-shadow: 0 .5rem .5rem rgba($color-black, .1);
 
         @include res(tablet) {
-            width: 20rem;
-            margin: 1rem auto;
-            order: 1;
+            height: 15rem;
+            width: 15rem;
         }
 
         &:hover {

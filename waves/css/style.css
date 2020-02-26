@@ -441,7 +441,8 @@ body {
     transition: opacity .9s ease-in; }
 
 .info {
-  padding: 0 10rem; }
+  padding: 0 10rem;
+  flex: 2 1 auto; }
   @media only screen and (max-width: 75em) {
     .info {
       width: 100%;
@@ -451,10 +452,13 @@ body {
     margin: 0 1rem; }
   .info__content {
     padding: 5rem; }
-    @media only screen and (max-width: 75em) {
+    @media only screen and (max-width: 55em) {
       .info__content {
         padding: 2rem;
         order: 2; } }
+  @media only screen and (max-width: 55em) {
+    .info__image {
+      order: 1; } }
   .info__photo {
     height: 30rem;
     width: 30rem;
@@ -463,9 +467,8 @@ body {
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1); }
     @media only screen and (max-width: 55em) {
       .info__photo {
-        width: 20rem;
-        margin: 1rem auto;
-        order: 1; } }
+        height: 15rem;
+        width: 15rem; } }
     .info__photo:hover {
       transform: scale(1.05);
       box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2); }
