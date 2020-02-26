@@ -27,4 +27,14 @@
         color: $color-white;
         background-color: $color-primary;
     }
+
+    &--secondary {
+        color: $color-white;
+        background-color: $color-secondary;
+    }
+
+    &--tertiary {
+        color: $color-white;
+        background-color: $color-tertiary;
+    }
 }

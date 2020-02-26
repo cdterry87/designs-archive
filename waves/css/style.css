@@ -153,16 +153,23 @@ body {
   .button--primary {
     color: white;
     background-color: #0099ff; }
+  .button--secondary {
+    color: white;
+    background-color: #FF8E00; }
+  .button--tertiary {
+    color: white;
+    background-color: #FF0090; }
 
 .card {
   border: solid 1px #e7e7e7;
   border-radius: 5px;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
   transition: all .3s ease;
-  height: 56rem;
+  height: 58rem;
   width: 100%;
   position: relative;
-  margin: 0 3rem; }
+  margin: 0 3rem;
+  overflow: hidden; }
   @media only screen and (max-width: 55em) {
     .card {
       margin: 2rem auto;

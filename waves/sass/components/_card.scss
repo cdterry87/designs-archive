@@ -3,10 +3,11 @@
     border-radius: 5px;
     box-shadow: 0 1rem 1rem rgba($color-black, .1);
     transition: all .3s ease;
-    height: 56rem;
+    height: 58rem;
     width: 100%;
     position: relative;
     margin: 0 3rem;
+    overflow: hidden;
 
     @include res(tablet) {
         margin: 2rem auto;
