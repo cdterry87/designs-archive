@@ -1,5 +1,6 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif !important;
+
     font-weight: 400;
     line-height: 1.7;
     color: $color-grey-dark;
@@ -75,11 +76,8 @@ body {
     font-size: 2.8rem;
     font-weight: 400;
     color: $color-secondary;
-    text-shadow: 1px 2px $color-secondary-dark;
-    font-style: italic;
 
     @include adapt(phone) {
         font-size: 1.8rem;
-        text-shadow: none;
     }
 }
