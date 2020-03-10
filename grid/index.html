@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Grids</title>
 </head>
-<body>
+<body class="grid">
     <header class="header">
         <nav class="header__nav">
             <ul class="header__items">
@@ -17,107 +17,108 @@
             </ul>
         </nav>
         <div class="header__left">
-            <h1 class="heading-1"></h1>
-            <h2 class="heading-2"></h2>
+            <h1 class="heading-1">Lorem ipsum dolor sit amet</h1>
             <p class="header__details">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Harum molestiae excepturi quidem totam quis dolores.
             </p>
         </div>
         <div class="header__right">
-            <form action="#" class="form">
-                <h3 class="heading-3"></h3>
-                <div class="form__block">
-                    <input type="text" class="form__input" placeholder="Email address">
-                </div>
-                <div class="form__block">
-                    <input type="password" class="form__input" placeholder="Password">
-                </div>
-                <div class="form__block">
-                    <input type="checkbox" id="remember">
-                    <label for="remember">Remember me</label>
-                </div>
-                <div class="form__block">
-                    <button class="button button--primary">Submit</button>
-                </div>
-            </form>
+            <div class="card">
+                <form action="#" class="form">
+                    <h4 class="heading-4">Fill out the form</h4>
+                    <div class="form__block">
+                        <label for="email" class="form__label">Email address:</label>
+                        <input type="text" class="form__text" id="email" placeholder="Email address">
+                    </div>
+                    <div class="form__block">
+                        <label for="password" class="form__label">Password:</label>
+                        <input type="password" class="form__text" id="password" placeholder="Password">
+                    </div>
+                    <div class="form__block">
+                        <input type="checkbox" id="remember" class="form__checkbox">
+                        <label for="remember" class="form__label">Remember me</label>
+                    </div>
+                    <div class="form__block">
+                        <button class="button button--primary">Submit</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </header>
 
-    <main>
-        <section class="advert">
-            <div class="advert__left">
-                <img src="#" alt="Advert image" class="advert__image">
-            </div>
-            <div class="advert__right">
-                <h2 class="heading-2"></h2>
-                <p class="advert__details">
-                    &ldquo;
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Similique minima quibusdam unde est harum consequatur asperiores.
-                    &rdquo;
-                </p>
-            </div>
-        </section>
-
-        <section class="promos">
-            <h2 class="heading-2"></h2>
-            <p class="promos__details">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Natus magnam ea aut magni consectetur delectus.
+    <section class="advert">
+        <div class="advert__left">
+            <img src="#" alt="Advert image" class="advert__image">
+        </div>
+        <div class="advert__right">
+            <h2 class="heading-2">Similique minima quibusdam unde est harum</h2>
+            <p class="advert__details">
+                &ldquo;
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Similique minima quibusdam unde est harum consequatur asperiores.
+                &rdquo;
             </p>
-            <div class="promo__cards">
-                <div class="card">
-                    <img src="#" alt="#" class="card__icon">
-                    <h4 class="card__title"></h4>
-                    <p class="card__details">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Suscipit, delectus earum molestiae nesciunt sit pariatur atque minima.
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="#" alt="#" class="card__icon">
-                    <h4 class="card__title"></h4>
-                    <p class="card__details">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Suscipit, delectus earum molestiae nesciunt sit pariatur atque minima.
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="#" alt="#" class="card__icon">
-                    <h4 class="card__title"></h4>
-                    <p class="card__details">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Suscipit, delectus earum molestiae nesciunt sit pariatur atque minima.
-                    </p>
-                </div>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="logos">
-            <img src="#" alt="Logo 1" class="logos__logo">
-            <img src="#" alt="Logo 2" class="logos__logo">
-            <img src="#" alt="Logo 3" class="logos__logo">
-            <img src="#" alt="Logo 4" class="logos__logo">
-        </section>
+    <section class="logos">
+        <img src="#" alt="Logo 1" class="logos__logo">
+        <img src="#" alt="Logo 2" class="logos__logo">
+        <img src="#" alt="Logo 3" class="logos__logo">
+        <img src="#" alt="Logo 4" class="logos__logo">
+    </section>
 
-        <section class="story">
-            <div class="story__left">
-                <img src="#" alt="Story Image 1" class="story__image--1">
-                <img src="#" alt="Story Image 2" class="story__image--2">
-            </div>
-            <div class="story__right">
-                <h3 class="heading-3"></h3>
-                <p class="story__details">
-                    &ldquo;
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis aliquid 
-                    est illo ad magni aperiam nam quod non, distinctio, eius consectetur.
-                    &rdquo;
+    <section class="promos">
+        <h2 class="heading-2">Consectetur adipisicing elit</h2>
+        <p class="promos__details">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Natus magnam ea aut magni consectetur delectus.
+        </p>
+        <div class="promo__cards">
+            <div class="card">
+                <img src="#" alt="#" class="card__icon">
+                <h4 class="card__title"></h4>
+                <p class="card__details">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Suscipit, delectus earum molestiae nesciunt sit pariatur atque minima.
                 </p>
-                <button class="button button--secondary">Read more</button>
             </div>
-        </section>
-    </main>
+            <div class="card">
+                <img src="#" alt="#" class="card__icon">
+                <h4 class="card__title"></h4>
+                <p class="card__details">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Suscipit, delectus earum molestiae nesciunt sit pariatur atque minima.
+                </p>
+            </div>
+            <div class="card">
+                <img src="#" alt="#" class="card__icon">
+                <h4 class="card__title"></h4>
+                <p class="card__details">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Suscipit, delectus earum molestiae nesciunt sit pariatur atque minima.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="story">
+        <div class="story__left">
+            <img src="#" alt="Story Image 1" class="story__image--1">
+            <img src="#" alt="Story Image 2" class="story__image--2">
+        </div>
+        <div class="story__right">
+            <h3 class="heading-3">Aperiam nam quod non</h3>
+            <p class="story__details">
+                &ldquo;
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis aliquid 
+                est illo ad magni aperiam nam quod non, distinctio, eius consectetur.
+                &rdquo;
+            </p>
+            <button class="button button--secondary">Read more</button>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="footer__logo">

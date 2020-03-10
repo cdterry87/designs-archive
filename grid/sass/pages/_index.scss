@@ -1,0 +1,19 @@
+.advert {
+    grid-column: inner-start / inner-end;
+    background-color: orange;
+}
+
+.promos {
+    grid-column: inner-start / inner-end;
+    background-color: purple;
+}
+
+.logos {
+    grid-column: outer-start / outer-end;
+    background-color: brown;
+}
+
+.story {
+    grid-column: outer-start / outer-end;
+    background-color: green;
+}

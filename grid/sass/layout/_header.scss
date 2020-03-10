@@ -1,0 +1,33 @@
+.header {
+    grid-column: inner-start / inner-end;
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    grid-template-columns: 60vw 1fr;
+
+    &__nav {
+        padding: 1.5rem 0;
+        grid-column: 1 / span 2;
+        background-color: gold;
+        justify-self: end;
+    }
+
+    &__items {
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+
+    &__left {
+        background-color: red;
+    }
+
+    &__right {
+        margin: 2rem 4rem;
+    }
+}
