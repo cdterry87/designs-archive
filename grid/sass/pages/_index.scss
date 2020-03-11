@@ -11,6 +11,8 @@
 .logos {
     grid-column: outer-start / outer-end;
     background-color: brown;
+
+    display: flex;
 }
 
 .story {

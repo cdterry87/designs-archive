@@ -41,7 +41,8 @@ body {
   padding: 3rem;
   border: solid 1px #e0e0e0;
   box-shadow: 0 1rem 2rem rgba(23, 23, 23, 0.1);
-  border-radius: 5px; }
+  border-radius: 5px;
+  background-color: #f5f5f5; }
 
 .footer {
   grid-column: outer-start / outer-end;
@@ -57,7 +58,8 @@ body {
     padding: 1.5rem 0;
     grid-column: 1 / span 2;
     background-color: gold;
-    justify-self: end; }
+    justify-self: end;
+    margin: auto 2rem; }
   .header__items {
     list-style: none; }
   .header__item {
@@ -79,7 +81,8 @@ body {
 
 .logos {
   grid-column: outer-start / outer-end;
-  background-color: brown; }
+  background-color: brown;
+  display: flex; }
 
 .story {
   grid-column: outer-start / outer-end;
