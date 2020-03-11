@@ -28,28 +28,40 @@
                 <form action="#" class="form">
                     <h4 class="heading-4">Fill out the form</h4>
                     <div class="form__block">
-                        <label for="email" class="form__label">Email address:</label>
-                        <input type="text" class="form__text" id="email" placeholder="Email address">
+                        <input type="text" class="form__text" aria-label="Email address" id="email" placeholder="Email address">
                     </div>
                     <div class="form__block">
-                        <label for="password" class="form__label">Password:</label>
-                        <input type="password" class="form__text" id="password" placeholder="Password">
+                        <input type="password" class="form__text" aria-label="Password" id="password" placeholder="Password">
                     </div>
                     <div class="form__block">
-                        <input type="checkbox" id="remember" class="form__checkbox">
-                        <label for="remember" class="form__label">Remember me</label>
+                        <input type="password" class="form__text" aria-label="Confirm password" id="confirm_password" placeholder="Confirm Password">
                     </div>
                     <div class="form__block">
-                        <button class="button button--primary">Submit</button>
+                        <input type="checkbox" id="agree" class="form__checkbox">
+                        <label for="agree" class="form__checkbox-label">
+                            <span class="form__checkbox-box"></span>
+                            I agree to the terms and conditions
+                        </label>
+                    </div>
+                    <div class="form__block">
+                        <button class="button button--primary button--full">Sign Up</button>
                     </div>
                 </form>
             </div>
         </div>
     </header>
 
+    <section class="logos">
+        <img src="./images/logos/amazon.png" alt="Logo 1" class="logos__logo">
+        <img src="./images/logos/apple.png" alt="Logo 2" class="logos__logo">
+        <img src="./images/logos/facebook.png" alt="Logo 3" class="logos__logo">
+        <img src="./images/logos/google.png" alt="Logo 4" class="logos__logo">
+        <img src="./images/logos/microsoft.png" alt="Logo 5" class="logos__logo">
+    </section>
+
     <section class="advert">
         <div class="advert__left">
-            <img src="#" alt="Advert image" class="advert__image">
+            <img src="./images/undraw/undraw_Mobile_app_p3ts.svg" alt="Advert image" class="advert__image">
         </div>
         <div class="advert__right">
             <h2 class="heading-2">Similique minima quibusdam unde est harum</h2>
@@ -60,14 +72,6 @@
                 &rdquo;
             </p>
         </div>
-    </section>
-
-    <section class="logos">
-        <img src="./images/amazon.png" alt="Logo 1" class="logos__logo">
-        <img src="./images/apple.png" alt="Logo 2" class="logos__logo">
-        <img src="./images/facebook.png" alt="Logo 3" class="logos__logo">
-        <img src="./images/google.png" alt="Logo 4" class="logos__logo">
-        <img src="./images/microsoft.png" alt="Logo 5" class="logos__logo">
     </section>
 
     <section class="promo">
