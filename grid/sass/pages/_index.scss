@@ -3,16 +3,34 @@
     background-color: orange;
 }
 
-.promos {
-    grid-column: inner-start / inner-end;
-    background-color: purple;
-}
-
 .logos {
     grid-column: outer-start / outer-end;
-    background-color: brown;
+    background-color: $color-primary;
+    padding: 3rem 0;
 
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 3rem;
+    justify-items: center;
+    align-items: center;
+
+    img {
+        max-height: 4.5rem;
+        max-width: 100%;
+        filter: brightness(75%);
+    }
+}
+
+.promo {
+    grid-column: inner-start / inner-end;
+    background-color: purple;
+
+    &__cards {
+        margin: 3rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 3rem;
+    }
 }
 
 .story {
