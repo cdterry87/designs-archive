@@ -17,6 +17,18 @@
   margin-top: 6rem;
   margin-bottom: 6rem; }
 
+.mx-1 {
+  margin-left: 1rem;
+  margin-right: 3rem; }
+
+.mx-2 {
+  margin-left: 3rem;
+  margin-right: 8rem; }
+
+.mx-3 {
+  margin-left: 6rem;
+  margin-right: 15rem; }
+
 *,
 *::before,
 *::after {
@@ -38,10 +50,10 @@ a {
   grid-template-columns: [outer-start] minmax(5rem, 1fr) [inner-start] repeat(10, [column-start] minmax(min-content, 15rem) [column-end]) [inner-end] minmax(5rem, 1fr) [outer-end]; }
 
 body {
-  font-family: sans-serif; }
+  font-family: 'Hammersmith One', sans-serif; }
 
 .heading-1, .heading-2, .heading-3, .heading-4 {
-  font-family: sans-serif;
+  font-family: 'Hammersmith One', sans-serif;
   font-weight: 400; }
 
 .heading-1 {
@@ -52,9 +64,17 @@ body {
 
 .heading-3 {
   font-size: 2.5rem; }
+  .heading-3--primary {
+    color: #F50057; }
+  .heading-3--secondary {
+    color: #2051bd; }
 
 .heading-4 {
   font-size: 2rem; }
+  .heading-4--primary {
+    color: #F50057; }
+  .heading-4--secondary {
+    color: #2051bd; }
 
 .button, .button:link, .button:visited {
   text-transform: uppercase;
@@ -176,7 +196,9 @@ body {
     grid-template-columns: 1fr; }
   .header__logo {
     padding: 1.5rem 0;
-    margin-left: 3rem; }
+    margin-left: 3rem;
+    font-size: 4rem;
+    align-self: center; }
   .header__content {
     align-self: center;
     justify-self: center;
@@ -202,6 +224,9 @@ body {
   align-content: center;
   justify-content: center;
   align-items: center; }
+  .advert__details {
+    font-family: sans-serif;
+    font-weight: 300; }
   .advert__image {
     width: 100%; }
   .advert__left {
@@ -225,13 +250,33 @@ body {
     filter: brightness(90%); }
 
 .promo {
-  grid-column: inner-start / inner-end;
-  background-color: purple; }
-  .promo__cards {
-    margin: 3rem;
+  margin: 3rem 0;
+  grid-column: inner-start / inner-end; }
+  .promo__items {
+    margin: 6rem 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 3rem; }
+    grid-template-rows: min-content;
+    grid-column-gap: 6rem; }
+  .promo__item {
+    border-top: .75rem solid transparent;
+    border-bottom: .75rem solid transparent;
+    transition: all .3s;
+    padding: 3rem 1rem;
+    text-align: center; }
+    .promo__item-title {
+      font-size: 2rem;
+      text-transform: uppercase;
+      color: #F50057;
+      margin: 1rem 0; }
+    .promo__item-detail {
+      font-size: 1.6rem; }
+    .promo__item:hover {
+      transform: scale(1.1);
+      border-top: 0.75rem solid #F50057;
+      border-bottom: 0.75rem solid #F50057; }
+  .promo__details {
+    font-size: 1.6rem; }
 
 .story {
   grid-column: outer-start / outer-end;

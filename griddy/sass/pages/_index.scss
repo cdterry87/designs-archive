@@ -9,6 +9,11 @@
     justify-content: center;
     align-items: center;
 
+    &__details {
+        font-family: sans-serif;
+        font-weight: 300;
+    }
+
     &__image {
         width: 100%;
     }
@@ -42,15 +47,49 @@
 }
 
 .promo {
+    margin: 3rem 0;
     grid-column: inner-start / inner-end;
-    background-color: purple;
 
-    &__cards {
-        margin: 3rem;
+    &__items {
+        margin: 6rem 0;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-column-gap: 3rem;
+        grid-template-rows: min-content;
+        grid-column-gap: 6rem;
     }
+
+    &__item {
+        border-top: .75rem solid transparent;
+        border-bottom: .75rem solid transparent;
+        transition: all .3s;
+        padding: 3rem 1rem;
+        text-align: center;
+
+        &-icon {
+        }
+
+        &-title {
+            font-size: 2rem;
+            text-transform: uppercase;
+            color: $color-primary;
+            margin: 1rem 0;
+        }
+
+        &-detail {
+            font-size: $default-font-size;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            border-top: .75rem solid $color-primary;
+            border-bottom: .75rem solid $color-primary;
+        }
+    }
+
+    &__details {
+        font-size: $default-font-size;
+    }
+    
 }
 
 .story {
