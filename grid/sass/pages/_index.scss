@@ -1,6 +1,26 @@
 .advert {
+    font-size: 2rem;
     grid-column: inner-start / inner-end;
-    background-color: orange;
+
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: 2fr 3fr;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    &__image {
+        width: 100%;
+    }
+
+    &__left {
+        margin: 10rem 5rem;
+    }
+
+    &__right {
+        margin-right: 3rem;
+        text-align: center;
+    }
 }
 
 .logos {
