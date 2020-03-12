@@ -31,6 +31,7 @@
 .logos {
     grid-column: outer-start / outer-end;
     background-color: $color-primary;
+    
     padding: 3rem 0;
 
     display: grid;
@@ -47,7 +48,7 @@
 }
 
 .promo {
-    margin: 3rem 0;
+    margin: 6rem 0;
     grid-column: inner-start / inner-end;
 
     &__items {
@@ -88,6 +89,10 @@
 
     &__details {
         font-size: $default-font-size;
+        letter-spacing: 1.2px;
+        margin: 2rem auto;
+        text-align: center;
+        width: 85rem;
     }
     
 }
