@@ -1,7 +1,6 @@
 .header {
     grid-column: outer-start / outer-end;
     display: grid;
-    grid-template-rows: repeat(2, min-content);
     grid-template-columns: 60% 40%;
     justify-items: center;
 
@@ -31,9 +30,12 @@
         padding-bottom: .5rem;
         padding: .5rem 1rem;
         border-bottom: solid 3px transparent;
+        transition: all .2s;
 
         &:hover {
             border-bottom: solid 3px $color-primary;
+            text-shadow: 3px 3px 0 $color-secondary-dark;
+            transform: scale(1.1);
         }
     }
 
@@ -43,29 +45,37 @@
         
         color: $color-white;
         font-size: 2.2rem;
-        line-height: 1.5;
         letter-spacing: 2px;
-
-        display: grid;
-        grid-template-rows: min-content 1fr;
-        grid-template-columns: 1fr;
     }
 
     &__logo {
-        padding: 1.5rem 0;
-        margin-left: 3rem;
+        margin: 1.5rem 3rem;
         font-size: 4rem;
-        align-self: center;
-        transition: all .3s;
 
-        &:hover {
+        &-link {
+            display: inline-block;
+            transition: all .3s;
+
+            &:hover {
+                transform: scale(1.1);
+                text-shadow: 3px 3px 0 $color-primary-dark;
+            }
         }
+    }
+
+    &__image {
+        height: 3.5rem;
+        width: 3.5rem;
     }
 
     &__content {
         align-self: center;
         justify-self: center;
         padding: 5rem;
+    }
+
+    &__details {
+        line-height: 1.5;
     }
 
     &__right {

@@ -6,7 +6,7 @@
 
     &__text {
         font-size: 1.5rem;
-        padding: 1.5rem 2rem;
+        padding: 1.25rem 1.5rem;
         border: solid 2px $color-primary;
         background-color: rgba($color-white, .5);
         transition: all .3s;
@@ -33,14 +33,14 @@
 
     &__checkbox-label {
         cursor: pointer;
-        font-size: $default-font-size;
+        font-size: 1.4rem;
         position: relative;
-        padding-left: 4.5rem;
+        padding-left: 3.5rem;
     }
 
     &__checkbox-box {
-        height: 3rem;
-        width: 3rem;
+        height: 2.5rem;
+        width: 2.5rem;
         border: 2px solid $color-primary;
         display: inline-block;
         position: absolute;
@@ -50,12 +50,10 @@
         &::after {
             content: "✓";
             display: block;
-            height: 2rem;
-            width: 2rem;
-            font-size: 2.5rem;
+            font-size: 2.25rem;
             color: $color-primary;
             position: absolute;
-            top: 30%;
+            top: 55%;
             left: 55%;
             transform: translate(-50%, -50%);
             opacity: 0;
@@ -65,5 +63,9 @@
 
     &__checkbox:checked ~ &__checkbox-label &__checkbox-box:after {
         opacity: 1;
+    }
+
+    &__submit {
+        margin-top: 1.25rem;
     }
 }

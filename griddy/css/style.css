@@ -98,22 +98,21 @@ body {
 
 .button--primary {
   background-color: #F50057;
-  color: #f5f5f5; }
+  color: #fff; }
 
 .card {
   padding: 3rem;
-  border: solid 3px #F50057;
   box-shadow: 0 1rem 3rem rgba(23, 23, 23, 0.1);
-  background-color: #f5f5f5; }
+  background-color: #fff; }
 
 .form__block {
   margin: 2rem auto; }
 
 .form__text {
   font-size: 1.5rem;
-  padding: 1.5rem 2rem;
+  padding: 1.25rem 1.5rem;
   border: solid 2px #F50057;
-  background-color: rgba(245, 245, 245, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   transition: all .3s;
   width: 90%;
   display: block;
@@ -132,13 +131,13 @@ body {
 
 .form__checkbox-label {
   cursor: pointer;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   position: relative;
-  padding-left: 4.5rem; }
+  padding-left: 3.5rem; }
 
 .form__checkbox-box {
-  height: 3rem;
-  width: 3rem;
+  height: 2.5rem;
+  width: 2.5rem;
   border: 2px solid #F50057;
   display: inline-block;
   position: absolute;
@@ -147,12 +146,10 @@ body {
   .form__checkbox-box::after {
     content: "✓";
     display: block;
-    height: 2rem;
-    width: 2rem;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     color: #F50057;
     position: absolute;
-    top: 30%;
+    top: 55%;
     left: 55%;
     transform: translate(-50%, -50%);
     opacity: 0;
@@ -160,6 +157,9 @@ body {
 
 .form__checkbox:checked ~ .form__checkbox-label .form__checkbox-box:after {
   opacity: 1; }
+
+.form__submit {
+  margin-top: 1.25rem; }
 
 .footer {
   grid-column: outer-start / outer-end;
@@ -170,7 +170,6 @@ body {
 .header {
   grid-column: outer-start / outer-end;
   display: grid;
-  grid-template-rows: repeat(2, min-content);
   grid-template-columns: 60% 40%;
   justify-items: center; }
   .header__nav {
@@ -178,7 +177,7 @@ body {
     padding: 1.5rem 0;
     grid-column: 1 / span 2;
     width: 100%;
-    color: #f5f5f5;
+    color: #fff;
     display: flex;
     justify-content: end; }
   .header__items {
@@ -191,29 +190,36 @@ body {
     transition: all .2s;
     padding-bottom: .5rem;
     padding: .5rem 1rem;
-    border-bottom: solid 3px transparent; }
+    border-bottom: solid 3px transparent;
+    transition: all .2s; }
     .header__link:hover {
-      border-bottom: solid 3px #F50057; }
+      border-bottom: solid 3px #F50057;
+      text-shadow: 3px 3px 0 #113688;
+      transform: scale(1.1); }
   .header__left {
     background-color: #F50057;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23b90041' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 0h40v40H0V0zm40 40h40v40H40V40zm0-40h2l-2 2V0zm0 4l4-4h2l-6 6V4zm0 4l8-8h2L40 10V8zm0 4L52 0h2L40 14v-2zm0 4L56 0h2L40 18v-2zm0 4L60 0h2L40 22v-2zm0 4L64 0h2L40 26v-2zm0 4L68 0h2L40 30v-2zm0 4L72 0h2L40 34v-2zm0 4L76 0h2L40 38v-2zm0 4L80 0v2L42 40h-2zm4 0L80 4v2L46 40h-2zm4 0L80 8v2L50 40h-2zm4 0l28-28v2L54 40h-2zm4 0l24-24v2L58 40h-2zm4 0l20-20v2L62 40h-2zm4 0l16-16v2L66 40h-2zm4 0l12-12v2L70 40h-2zm4 0l8-8v2l-6 6h-2zm4 0l4-4v2l-2 2h-2z'/%3E%3C/g%3E%3C/svg%3E");
-    color: #f5f5f5;
+    color: #fff;
     font-size: 2.2rem;
-    line-height: 1.5;
-    letter-spacing: 2px;
-    display: grid;
-    grid-template-rows: min-content 1fr;
-    grid-template-columns: 1fr; }
+    letter-spacing: 2px; }
   .header__logo {
-    padding: 1.5rem 0;
-    margin-left: 3rem;
-    font-size: 4rem;
-    align-self: center;
-    transition: all .3s; }
+    margin: 1.5rem 3rem;
+    font-size: 4rem; }
+    .header__logo-link {
+      display: inline-block;
+      transition: all .3s; }
+      .header__logo-link:hover {
+        transform: scale(1.1);
+        text-shadow: 3px 3px 0 #b90041; }
+  .header__image {
+    height: 3.5rem;
+    width: 3.5rem; }
   .header__content {
     align-self: center;
     justify-self: center;
     padding: 5rem; }
+  .header__details {
+    line-height: 1.5; }
   .header__right {
     display: grid;
     grid-template-rows: min-content 1fr;
@@ -241,7 +247,7 @@ body {
   .advert__image {
     width: 100%; }
   .advert__left {
-    margin: 10rem 5rem; }
+    margin: 12rem 5rem; }
   .advert__right {
     margin-right: 3rem;
     text-align: center; }
@@ -288,11 +294,12 @@ body {
       border-bottom: 0.75rem solid #F50057; }
   .promo__details {
     font-size: 2rem;
-    letter-spacing: 1.2px;
+    font-family: sans-serif;
+    font-weight: 300;
     margin: 2rem auto;
     text-align: center;
-    width: 85rem; }
+    width: 75rem;
+    font-family: sans-serif; }
 
 .story {
-  grid-column: outer-start / outer-end;
-  background-color: green; }
+  grid-column: outer-start / outer-end; }
