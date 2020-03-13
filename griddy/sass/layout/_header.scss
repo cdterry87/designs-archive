@@ -17,11 +17,12 @@
 
     &__items {
         list-style: none;
+        margin-right: 3rem;
     }
 
     &__item {
         display: inline-block;
-        margin-right: 2rem;
+        margin-right: 1rem;
     }
 
     &__link {
@@ -35,7 +36,7 @@
         &:hover {
             border-bottom: solid 3px $color-primary;
             text-shadow: 3px 3px 0 $color-secondary-dark;
-            transform: scale(1.1);
+            transform: scale(1.1) rotate(-3deg);
         }
     }
 
@@ -91,5 +92,6 @@
         margin: 3rem;
         align-self: center;
         justify-self: center;
+        width: 80%;
     }
 }

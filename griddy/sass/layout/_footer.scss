@@ -4,4 +4,72 @@
     padding: 6rem 0;
     background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23113688' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    color: $color-white;
+
+    &__logo {
+        margin-bottom: 3rem;
+
+        &-image {
+            height: 3rem;
+            width: 3rem;
+        }
+
+        &-text {
+            font-size: 3rem;
+            color: white;
+        }
+
+        &-link {
+            display: inline-block;
+            transition: all .3s;
+
+            &:hover {
+                transform: scale(1.1);
+                text-shadow: 2px 2px 0 $color-secondary-dark;
+            }
+        }
+    }
+
+    &__nav {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    &__items {
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+
+    &__link {
+        display: block;
+        transition: all .2s;
+        padding-bottom: .5rem;
+        padding: .5rem 1rem;
+        border-bottom: solid 3px transparent;
+        transition: all .2s;
+
+        &:hover {
+            border-bottom: solid 3px $color-primary;
+            text-shadow: 2px 2px 0 $color-secondary-dark;
+            transform: scale(1.1) rotate(-3deg);
+        }
+    }
+
+    &__copyright {
+        font-size: $default-font-size;
+        text-align: center;
+    }
 }

@@ -31,5 +31,18 @@
     &--primary {
         background-color: $color-primary;
         color: $color-white;
+
+        &:hover {
+            text-shadow: 2px 2px 0 $color-primary-dark;
+        }
+    }
+
+    &--secondary {
+        background-color: $color-secondary;
+        color: $color-white;
+
+        &:hover {
+            text-shadow: 2px 2px 0 $color-secondary-dark;
+        }
     }
 }

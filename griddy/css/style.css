@@ -127,6 +127,14 @@ body {
 .button--primary {
   background-color: #F50057;
   color: #fff; }
+  .button--primary:hover {
+    text-shadow: 2px 2px 0 #b90041; }
+
+.button--secondary {
+  background-color: #2051bd;
+  color: #fff; }
+  .button--secondary:hover {
+    text-shadow: 2px 2px 0 #113688; }
 
 .card {
   padding: 3rem;
@@ -145,7 +153,7 @@ body {
   border: solid 2px #fc4362;
   background-color: rgba(255, 255, 255, 0.5);
   transition: all .3s;
-  width: 90%;
+  width: 100%;
   display: block;
   transition: all .2s; }
   .form__text:hover, .form__text:focus {
@@ -197,7 +205,50 @@ body {
   grid-column: outer-start / outer-end;
   background-color: #2051bd;
   padding: 6rem 0;
-  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23113688' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23113688' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  color: #fff; }
+  .footer__logo {
+    margin-bottom: 3rem; }
+    .footer__logo-image {
+      height: 3rem;
+      width: 3rem; }
+    .footer__logo-text {
+      font-size: 3rem;
+      color: white; }
+    .footer__logo-link {
+      display: inline-block;
+      transition: all .3s; }
+      .footer__logo-link:hover {
+        transform: scale(1.1);
+        text-shadow: 2px 2px 0 #113688; }
+  .footer__nav {
+    text-align: center;
+    font-size: 2rem; }
+  .footer__items {
+    list-style: none; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: 2rem; }
+  .footer__link {
+    display: block;
+    transition: all .2s;
+    padding-bottom: .5rem;
+    padding: .5rem 1rem;
+    border-bottom: solid 3px transparent;
+    transition: all .2s; }
+    .footer__link:hover {
+      border-bottom: solid 3px #F50057;
+      text-shadow: 2px 2px 0 #113688;
+      transform: scale(1.1) rotate(-3deg); }
+  .footer__copyright {
+    font-size: 1.6rem;
+    text-align: center; }
 
 .header {
   grid-column: outer-start / outer-end;
@@ -213,10 +264,11 @@ body {
     display: flex;
     justify-content: end; }
   .header__items {
-    list-style: none; }
+    list-style: none;
+    margin-right: 3rem; }
   .header__item {
     display: inline-block;
-    margin-right: 2rem; }
+    margin-right: 1rem; }
   .header__link {
     display: block;
     transition: all .2s;
@@ -227,7 +279,7 @@ body {
     .header__link:hover {
       border-bottom: solid 3px #F50057;
       text-shadow: 3px 3px 0 #113688;
-      transform: scale(1.1); }
+      transform: scale(1.1) rotate(-3deg); }
   .header__left {
     background-color: #F50057;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23b90041' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 0h40v40H0V0zm40 40h40v40H40V40zm0-40h2l-2 2V0zm0 4l4-4h2l-6 6V4zm0 4l8-8h2L40 10V8zm0 4L52 0h2L40 14v-2zm0 4L56 0h2L40 18v-2zm0 4L60 0h2L40 22v-2zm0 4L64 0h2L40 26v-2zm0 4L68 0h2L40 30v-2zm0 4L72 0h2L40 34v-2zm0 4L76 0h2L40 38v-2zm0 4L80 0v2L42 40h-2zm4 0L80 4v2L46 40h-2zm4 0L80 8v2L50 40h-2zm4 0l28-28v2L54 40h-2zm4 0l24-24v2L58 40h-2zm4 0l20-20v2L62 40h-2zm4 0l16-16v2L66 40h-2zm4 0l12-12v2L70 40h-2zm4 0l8-8v2l-6 6h-2zm4 0l4-4v2l-2 2h-2z'/%3E%3C/g%3E%3C/svg%3E");
@@ -262,7 +314,8 @@ body {
   .header__form {
     margin: 3rem;
     align-self: center;
-    justify-self: center; }
+    justify-self: center;
+    width: 80%; }
 
 .advert {
   font-size: 2rem;
