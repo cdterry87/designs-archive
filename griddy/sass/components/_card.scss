@@ -2,4 +2,9 @@
     padding: 3rem;
     box-shadow: 0 1rem 3rem rgba($color-black, .1);
     background-color: $color-white;
+
+    &--animated {
+        animation: inFromTop .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
 }

@@ -7,22 +7,28 @@
     align-content: center;
     justify-content: center;
     align-items: center;
+    margin: 10rem auto;
 
     &__details {
         font-family: sans-serif;
         font-weight: 300;
+        line-height: 1.5;
     }
 
     &__image {
         width: 100%;
+
+        &--animated {
+            animation: inFromLeft 1s ease-out;
+        }
     }
 
     &__left {
-        margin: 12rem 5rem;
+        margin: auto 5rem;
     }
 
     &__right {
-        margin-right: 3rem;
+        margin: auto 5rem;
         text-align: center;
     }
 }
@@ -30,19 +36,41 @@
 .logos {
     grid-column: outer-start / outer-end;
     background-color: $color-primary;
-    
     padding: 3rem 6rem;
 
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-column-gap: 3rem;
-    justify-items: center;
-    align-items: center;
+    &__intro {
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        grid-column-gap: 1.5rem;
+        align-items: center;
 
-    img {
-        max-height: 4.5rem;
-        max-width: 100%;
-        filter: brightness(90%);
+        color: $color-white;
+        font-size: 2.5rem;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 2rem;
+
+        &::before,
+        &::after {
+            content: "";
+            display: block;
+            height: 1px;
+            background-color: currentColor;
+        }
+    }
+
+    &__images {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-column-gap: 3rem;
+        justify-items: center;
+        align-items: center;
+
+        img {
+            max-height: 4.5rem;
+            max-width: 100%;
+            filter: brightness(90%);
+        }
     }
 }
 
@@ -78,6 +106,7 @@
 
         &-detail {
             font-size: $default-font-size;
+            line-height: 1.5;
         }
 
         &:hover {
@@ -91,6 +120,7 @@
         font-size: 2rem;
         font-family: sans-serif;
         font-weight: 300;
+        line-height: 1.5;
         margin: 2rem auto;
         text-align: center;
         width: 75rem;

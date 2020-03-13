@@ -18,7 +18,7 @@ a {
 
 .grid {
     display: grid;
-    grid-template-rows: 75vh repeat(5, min-content);
+    grid-template-rows: min-content repeat(5, min-content);
     grid-template-columns: [outer-start]
     minmax(5rem, 1fr)
     [inner-start] 

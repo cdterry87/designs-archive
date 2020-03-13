@@ -1,6 +1,4 @@
 body {
-    // font-family: 'Questrial', sans-serif;
-    // font-family: 'Russo One', sans-serif;
     font-family: 'Hammersmith One', sans-serif;
 }
 
@@ -12,6 +10,10 @@ body {
 .heading-1 {
     @extend %heading;
     font-size: 5rem;
+
+    &--animated {
+        animation: fadeIn 1s ease-out;
+    }
 }
 
 .heading-2 {
