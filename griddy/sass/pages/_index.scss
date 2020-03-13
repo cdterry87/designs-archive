@@ -1,12 +1,5 @@
 .advert {
     font-size: 2rem;
-    grid-column: inner-start / inner-end;
-    display: grid;
-    grid-gap: 3rem;
-    grid-template-columns: 2fr 3fr;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
     margin: 10rem auto;
 
     &__details {
@@ -34,16 +27,10 @@
 }
 
 .logos {
-    grid-column: outer-start / outer-end;
     background-color: $color-primary;
     padding: 3rem 6rem;
 
     &__intro {
-        display: grid;
-        grid-template-columns: 1fr max-content 1fr;
-        grid-column-gap: 1.5rem;
-        align-items: center;
-
         color: $color-white;
         font-size: 2.5rem;
         font-weight: 400;
@@ -60,11 +47,6 @@
     }
 
     &__images {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-column-gap: 3rem;
-        justify-items: center;
-        align-items: center;
 
         img {
             max-height: 4.5rem;
@@ -76,14 +58,9 @@
 
 .promo {
     margin: 6rem 0;
-    grid-column: inner-start / inner-end;
 
     &__items {
         margin: 6rem 0;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: min-content;
-        grid-column-gap: 6rem;
     }
 
     &__item {
@@ -92,10 +69,6 @@
         transition: all .3s;
         padding: 3rem 1rem;
         text-align: center;
-
-        &-icon {
-
-        }
 
         &-title {
             font-size: 2rem;
@@ -129,14 +102,7 @@
 }
 
 .story {
-    grid-column: outer-start / outer-end;
     font-size: 2rem;
-    display: grid;
-    grid-gap: 3rem;
-    grid-template-columns: 3fr 2fr;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
     margin: 2rem auto 10rem auto;
     text-align: center;
 
