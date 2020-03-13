@@ -32,7 +32,7 @@
     grid-column: outer-start / outer-end;
     background-color: $color-primary;
     
-    padding: 3rem 0;
+    padding: 3rem 6rem;
 
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -67,6 +67,7 @@
         text-align: center;
 
         &-icon {
+
         }
 
         &-title {
@@ -88,13 +89,12 @@
     }
 
     &__details {
-        font-size: $default-font-size;
+        font-size: 2rem;
         letter-spacing: 1.2px;
         margin: 2rem auto;
         text-align: center;
         width: 85rem;
     }
-    
 }
 
 .story {
