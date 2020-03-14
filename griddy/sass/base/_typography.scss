@@ -19,6 +19,14 @@ body {
 .heading-2 {
     @extend %heading;
     font-size: 3.6rem;
+
+    &--primary {
+        color: $color-primary;
+    }
+
+    &--secondary {
+        color: $color-secondary;
+    }
 }
 
 .heading-3 {

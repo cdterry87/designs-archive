@@ -83,4 +83,14 @@
         justify-self: center;
         width: 80%;
     }
+
+    &__cta {
+        color: $color-secondary;
+        font-size: 1.8rem;
+        transition: all .2s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
 }

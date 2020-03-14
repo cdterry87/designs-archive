@@ -9,10 +9,6 @@
     [inner-end]
     minmax(5rem, 1fr)
     [outer-end];
-
-    @media only screen and (max-width: $bp-large) {
-        grid-template-columns: 1fr;
-    }
 }
 
 .header {
@@ -79,14 +75,14 @@
 
     &__images {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         grid-column-gap: 3rem;
         justify-items: center;
         align-items: center;
         
         @media only screen and (max-width: $bp-medium) {
-            grid-template-rows: repeat(5, 1fr);
-            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             grid-row-gap: 2rem;
         }
     }
@@ -120,7 +116,7 @@
     align-items: center;
 
     @media only screen and (max-width: $bp-large) {
-        grid-template-rows: 3fr 2fr;
+        grid-template-rows: repeat(2, min-content);
         grid-template-columns: 1fr;
 
         &__left {

@@ -97,6 +97,10 @@ body {
 
 .heading-2 {
   font-size: 3.6rem; }
+  .heading-2--primary {
+    color: #F50057; }
+  .heading-2--secondary {
+    color: #2051bd; }
 
 .heading-3 {
   font-size: 2.5rem; }
@@ -213,9 +217,6 @@ body {
   display: grid;
   grid-template-rows: repeat(6, min-content);
   grid-template-columns: [outer-start] minmax(5rem, 1fr) [inner-start] repeat(10, [column-start] minmax(min-content, 15rem) [column-end]) [inner-end] minmax(5rem, 1fr) [outer-end]; }
-  @media only screen and (max-width: 53em) {
-    .grid {
-      grid-template-columns: 1fr; } }
 
 .header {
   grid-column: outer-start / outer-end;
@@ -264,14 +265,14 @@ body {
         grid-template-columns: 1fr; } }
   .logos__images {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 3rem;
     justify-items: center;
     align-items: center; }
     @media only screen and (max-width: 48em) {
       .logos__images {
-        grid-template-rows: repeat(5, 1fr);
-        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-row-gap: 2rem; } }
 
 .promo {
@@ -297,7 +298,7 @@ body {
   align-items: center; }
   @media only screen and (max-width: 53em) {
     .story {
-      grid-template-rows: 3fr 2fr;
+      grid-template-rows: repeat(2, min-content);
       grid-template-columns: 1fr; }
       .story__left {
         order: 2; }
@@ -422,6 +423,13 @@ body {
   justify-self: center;
   width: 80%; }
 
+.header__cta {
+  color: #2051bd;
+  font-size: 1.8rem;
+  transition: all .2s; }
+  .header__cta:hover {
+    transform: scale(1.1); }
+
 .advert {
   font-size: 2rem;
   margin: 10rem auto;
@@ -440,7 +448,7 @@ body {
     @media only screen and (max-width: 53em) {
       .advert__image {
         width: 50%;
-        margin-bottom: 3rem; } }
+        margin-bottom: 6rem; } }
   .advert__left {
     margin: auto 5rem; }
   .advert__right {
@@ -488,8 +496,11 @@ body {
     text-align: center; }
     @media only screen and (max-width: 53em) {
       .promo__item {
-        width: 50%;
+        width: 75%;
         margin: 0 auto; } }
+    @media only screen and (max-width: 48em) {
+      .promo__item {
+        width: 95%; } }
     .promo__item-title {
       font-size: 2rem;
       text-transform: uppercase;
@@ -509,8 +520,10 @@ body {
     line-height: 1.5;
     margin: 2rem auto;
     text-align: center;
-    width: 75rem;
     font-family: sans-serif; }
+    @media only screen and (min-width: 53em) {
+      .promo__details {
+        width: 75rem; } }
 
 .story {
   font-size: 2rem;
