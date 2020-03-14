@@ -431,9 +431,12 @@ body {
     font-weight: 300;
     line-height: 1.5; }
   .advert__image {
-    width: 100%; }
+    width: 100%;
+    transition: all .3s; }
     .advert__image--animated {
       animation: inFromLeft 1s ease-out; }
+    .advert__image:hover {
+      transform: scale(1.2); }
     @media only screen and (max-width: 53em) {
       .advert__image {
         width: 50%;
@@ -514,9 +517,12 @@ body {
   margin: 2rem auto 10rem auto;
   text-align: center; }
   .story__image {
-    width: 100%; }
+    width: 100%;
+    transition: all .3s; }
     .story__image--animated {
       animation: inFromRight 1s ease-out; }
+    .story__image:hover {
+      transform: scale(1.2); }
     @media only screen and (max-width: 53em) {
       .story__image {
         width: 50%;
