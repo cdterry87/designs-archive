@@ -75,6 +75,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 53em) {
+    html {
+      font-size: 50%; } }
 
 a {
   text-decoration: none;
@@ -210,21 +213,24 @@ body {
   display: grid;
   grid-template-rows: repeat(6, min-content);
   grid-template-columns: [outer-start] minmax(5rem, 1fr) [inner-start] repeat(10, [column-start] minmax(min-content, 15rem) [column-end]) [inner-end] minmax(5rem, 1fr) [outer-end]; }
+  @media only screen and (max-width: 53em) {
+    .grid {
+      grid-template-columns: 1fr; } }
 
 .header {
   grid-column: outer-start / outer-end;
   display: grid;
   grid-template-columns: 60% 40%;
   justify-items: center; }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: 53em) {
     .header {
-      grid-template-columns: min-content;
+      grid-template-columns: 1fr;
       grid-template-rows: repeat(2, min-content); } }
   .header__nav {
     grid-column: 1 / span 2;
     display: flex;
     justify-content: end; }
-    @media only screen and (max-width: 62.5em) {
+    @media only screen and (max-width: 53em) {
       .header__nav {
         display: none; } }
   .header__left {
@@ -241,11 +247,10 @@ body {
   align-content: center;
   justify-content: center;
   align-items: center; }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: 53em) {
     .advert {
       grid-template-rows: repeat(2, min-content);
-      grid-template-columns: 1fr;
-      grid-gap: 5rem; } }
+      grid-template-columns: 1fr; } }
 
 .logos {
   grid-column: outer-start / outer-end; }
@@ -256,18 +261,17 @@ body {
     align-items: center; }
     @media only screen and (max-width: 48em) {
       .logos__intro {
-        grid-template-columns: max-content; } }
+        grid-template-columns: 1fr; } }
   .logos__images {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-column-gap: 3rem;
     justify-items: center;
     align-items: center; }
-    @media only screen and (max-width: 62.5em) {
+    @media only screen and (max-width: 48em) {
       .logos__images {
         grid-template-rows: repeat(5, 1fr);
         grid-template-columns: 1fr;
-        grid-column-gap: .5rem;
         grid-row-gap: 2rem; } }
 
 .promo {
@@ -277,29 +281,33 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: min-content;
     grid-column-gap: 6rem; }
-    @media only screen and (max-width: 62.5em) {
+    @media only screen and (max-width: 53em) {
       .promo__items {
         grid-template-rows: repeat(3, 1fr);
-        grid-template-columns: min-content;
+        grid-template-columns: 1fr;
         grid-column-gap: .5rem;
         grid-row-gap: 2rem; } }
 
 .story {
-  grid-column: outer-start / outer-end;
+  grid-column: inner-start / inner-end;
   display: grid;
   grid-template-columns: 3fr 2fr;
   align-content: center;
   justify-content: center;
   align-items: center; }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: 53em) {
     .story {
       grid-template-rows: 3fr 2fr;
-      grid-template-columns: min-content; } }
+      grid-template-columns: 1fr; }
+      .story__left {
+        order: 2; }
+      .story__right {
+        order: 1; } }
 
 .footer {
   grid-column: outer-start / outer-end;
   display: grid;
-  grid-template-columns: repeat(2, 50%); }
+  grid-template-rows: repeat(3, min-content); }
 
 .footer {
   background-color: #2051bd;
@@ -310,7 +318,7 @@ body {
   align-items: center;
   color: #fff; }
   .footer__logo {
-    margin-bottom: 3rem; }
+    text-align: center; }
     .footer__logo-image {
       height: 3rem;
       width: 3rem; }
@@ -325,7 +333,8 @@ body {
         text-shadow: 2px 2px 0 #113688; }
   .footer__nav {
     text-align: center;
-    font-size: 2rem; }
+    font-size: 2rem;
+    margin: 5rem 0; }
   .footer__items {
     list-style: none; }
   .footer__item {
@@ -415,7 +424,8 @@ body {
 
 .advert {
   font-size: 2rem;
-  margin: 10rem auto; }
+  margin: 10rem auto;
+  text-align: center; }
   .advert__details {
     font-family: sans-serif;
     font-weight: 300;
@@ -424,41 +434,59 @@ body {
     width: 100%; }
     .advert__image--animated {
       animation: inFromLeft 1s ease-out; }
+    @media only screen and (max-width: 53em) {
+      .advert__image {
+        width: 50%;
+        margin-bottom: 3rem; } }
   .advert__left {
     margin: auto 5rem; }
   .advert__right {
-    margin: auto 5rem;
-    text-align: center; }
+    margin: auto 5rem; }
 
 .logos {
   background-color: #F50057;
   padding: 3rem 6rem; }
+  @media only screen and (max-width: 48em) {
+    .logos {
+      padding: 1rem 2rem; } }
   .logos__intro {
     color: #fff;
     font-size: 2.5rem;
     font-weight: 400;
     text-align: center;
     margin-bottom: 2rem; }
-    .logos__intro::before, .logos__intro::after {
-      content: "";
-      display: block;
-      height: 1px;
-      background-color: currentColor; }
+    @media only screen and (min-width: 53em) {
+      .logos__intro::before, .logos__intro::after {
+        content: "";
+        display: block;
+        height: 1px;
+        background-color: currentColor; } }
   .logos__images img {
     max-height: 4.5rem;
     max-width: 100%;
     filter: brightness(90%); }
+    @media only screen and (max-width: 48em) {
+      .logos__images img {
+        height: 3rem;
+        width: auto; } }
 
 .promo {
   margin: 6rem 0; }
   .promo__items {
     margin: 6rem 0; }
+  @media only screen and (max-width: 53em) {
+    .promo {
+      margin: 3rem; } }
   .promo__item {
     border-top: .75rem solid transparent;
     border-bottom: .75rem solid transparent;
     transition: all .3s;
     padding: 3rem 1rem;
     text-align: center; }
+    @media only screen and (max-width: 53em) {
+      .promo__item {
+        width: 50%;
+        margin: 0 auto; } }
     .promo__item-title {
       font-size: 2rem;
       text-transform: uppercase;
@@ -489,6 +517,10 @@ body {
     width: 100%; }
     .story__image--animated {
       animation: inFromRight 1s ease-out; }
+    @media only screen and (max-width: 53em) {
+      .story__image {
+        width: 50%;
+        margin-bottom: 3rem; } }
   .story__details {
     font-family: sans-serif;
     font-weight: 300;

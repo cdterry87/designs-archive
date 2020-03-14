@@ -1,6 +1,7 @@
 .advert {
     font-size: 2rem;
     margin: 10rem auto;
+    text-align: center;
 
     &__details {
         font-family: sans-serif;
@@ -14,6 +15,11 @@
         &--animated {
             animation: inFromLeft 1s ease-out;
         }
+
+        @media only screen and (max-width: $bp-large) {
+            width: 50%;
+            margin-bottom: 3rem;
+        }
     }
 
     &__left {
@@ -22,13 +28,16 @@
 
     &__right {
         margin: auto 5rem;
-        text-align: center;
     }
 }
 
 .logos {
     background-color: $color-primary;
     padding: 3rem 6rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 1rem 2rem;
+    }
 
     &__intro {
         color: $color-white;
@@ -39,10 +48,12 @@
 
         &::before,
         &::after {
-            content: "";
-            display: block;
-            height: 1px;
-            background-color: currentColor;
+            @media only screen and (min-width: $bp-large) {
+                content: "";
+                display: block;
+                height: 1px;
+                background-color: currentColor;
+            }
         }
     }
 
@@ -52,6 +63,11 @@
             max-height: 4.5rem;
             max-width: 100%;
             filter: brightness(90%);
+
+            @media only screen and (max-width: $bp-medium) {
+                height: 3rem;
+                width: auto;
+            }
         }
     }
 }
@@ -63,12 +79,21 @@
         margin: 6rem 0;
     }
 
+    @media only screen and (max-width: $bp-large) {
+        margin: 3rem;
+    }
+
     &__item {
         border-top: .75rem solid transparent;
         border-bottom: .75rem solid transparent;
         transition: all .3s;
         padding: 3rem 1rem;
         text-align: center;
+
+        @media only screen and (max-width: $bp-large) {
+            width: 50%;
+            margin: 0 auto;
+        }
 
         &-title {
             font-size: 2rem;
@@ -111,6 +136,11 @@
 
         &--animated {
             animation: inFromRight 1s ease-out;
+        }
+
+        @media only screen and (max-width: $bp-large) {
+            width: 50%;
+            margin-bottom: 3rem;
         }
     }
 
