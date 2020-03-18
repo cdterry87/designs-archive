@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    text-align: center;
 
     &::before {
         content: "";
@@ -17,6 +18,20 @@
         background: linear-gradient(to top, #571aa7, #32076b);
         border-radius: 0 0 50% 50%/0 0 100% 100%;
         transform: scaleX(1.5);
+        z-index: -1;
+
+        @media screen and (max-width: 720px) {
+            border-radius: 0 0 80% 80%/0 0 100% 100%;
+        }
+
+        @media screen and (max-width: 480px) {
+            border-radius: 0 0 115% 115%/0 0 100% 100%;
+        }
+    }
+
+    &__content {
+        text-align: center;
+        width: 60%;
     }
 }
 
