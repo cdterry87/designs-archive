@@ -1,3 +1,8 @@
+@import url(./../node_modules//@fortawesome/fontawesome-free/css/all.min.css);
+.my-1 {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem; }
+
 *,
 *::before,
 *::after {
@@ -28,18 +33,19 @@ body {
   font-size: 6rem; }
 
 .heading--2 {
-  font-size: 3rem; }
+  font-size: 4rem; }
 
 .heading--3 {
-  font-size: 2.5rem; }
+  font-size: 3.2rem; }
 
 .heading--4 {
-  font-size: 2rem; }
+  font-size: 2.5rem;
+  text-transform: uppercase; }
 
 .header {
   position: relative;
   width: 100%;
-  height: 75vh;
+  height: 65vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,3 +71,33 @@ body {
   .header__content {
     text-align: center;
     width: 60%; }
+
+.items {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.item {
+  margin: 2rem;
+  padding: 2rem;
+  text-align: center;
+  color: #212121;
+  font-size: 1.6rem;
+  width: 32rem;
+  background-color: white;
+  border-radius: .6rem; }
+  .item__icon {
+    font-size: 8rem;
+    background: linear-gradient(to right, #571aa7, #32076b);
+    display: inline-block;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; }
+  .item__details {
+    line-height: 1.5; }
+
+.announcement {
+  margin-top: 16rem; }
