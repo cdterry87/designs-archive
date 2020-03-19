@@ -1,10 +1,19 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif;
+}
+
+.header {
+    font-family: 'Montserrat', sans-serif;
+
+    &__logo {
+        font-size: 5rem;
+    }
 }
 
 %heading {
     font-family: sans-serif;
-    font-weight: 400;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
 }
 
 .heading {
@@ -23,7 +32,7 @@ body {
     }
 
     &--4 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         text-transform: uppercase;
     }
 }
