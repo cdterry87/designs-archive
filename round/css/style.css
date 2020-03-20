@@ -154,7 +154,7 @@ body {
     transform: translateY(-1rem); }
 
 .announcement {
-  margin-top: 16rem;
+  margin-top: 20rem;
   display: flex;
   justify-content: center; }
   .announcement__content {
@@ -173,7 +173,8 @@ body {
       font-size: 6rem; }
   .announcement__details {
     font-size: 1.8rem;
-    color: rgba(255, 255, 255, 0.6); }
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.5; }
   .announcement__stats {
     margin: 4rem 0;
     display: flex;
@@ -189,7 +190,7 @@ body {
       color: rgba(255, 255, 255, 0.6); }
 
 .logos {
-  margin-top: 12rem; }
+  margin-top: 10rem; }
   .logos__logos {
     margin: 8rem 20rem 10rem 20rem;
     display: grid;
