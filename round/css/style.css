@@ -149,7 +149,8 @@ body {
     -webkit-background-clip: text;
     color: transparent; }
   .item__details {
-    line-height: 1.5; }
+    line-height: 1.5;
+    margin: 1.5rem 0; }
   .item:hover {
     transform: translateY(-1rem); }
 
