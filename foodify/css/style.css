@@ -1,0 +1,126 @@
+html,
+body,
+.cover {
+    height: 95%;
+}
+
+.cover {
+    /*background: url('../images/cover.jpg') top left no-repeat;*/
+    background-size: cover;
+    display: table;
+    width: 100%;
+    padding: 0 20%;
+    box-shadow: inset 0 0 100px #000;
+}
+
+.cover-text {
+    text-align: center;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+	text-shadow: 1px 2px 3px #333;
+}
+
+.cover-text h1 {
+    margin: 0;
+    font-size: 70px;
+    letter-spacing: -3px;
+}
+
+nav.navbar-inverse {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+nav.navbar-inverse a{
+    color: white !important;
+}
+
+.testimonial {
+    background: #222;
+    padding: 35px;
+}
+
+blockquote {
+    border: none;
+    margin: 0;
+    font-family: Georgia, Times, serif;
+    font-style: italic;
+    font-size: 24px;
+    color: white;
+}
+
+blockquote cite {
+    display: block;
+    text-align: right;
+    text-transform: uppercase;
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+section {
+    padding: 15px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+
+h2 + p {
+    text-align: center;
+    margin-top: -60px;
+}
+
+h4{
+    font-weight: normal;
+    text-align: center;
+    padding-bottom: 20px;
+    font-style: italic;
+}
+
+.row img{
+    width: 100%;
+}
+
+form{
+    text-align: center;
+}
+
+form input, form textarea{
+    margin-bottom: 15px;
+}
+
+footer {
+    margin-top: 35px;
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: Georgia, Times, serif;
+}
+
+nav .nav .active a, footer a, blockquote cite{
+    color: rgb(107, 224, 107) !important;
+}
+
+.fa{font-size: 1.5em; padding-right: 20px;}
+
+/* Media Queries */
+
+@media only screen and ( max-width : 568px ) {
+    .cover h1 {
+		margin-top: 60px;
+        font-size: 40px;
+    }
+    section {
+        padding: 20px;
+    }
+    
+}
