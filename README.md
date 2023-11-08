@@ -10,3 +10,5 @@ Check out some of my old design prototypes using the links below!
 - [Round Layout (preview)](https://cdterry87.github.io/designs-archive/round)
 - [Foodify Layout (preview)](https://cdterry87.github.io/designs-archive/foodify)
 - [Work-In Layout (preview)](https://cdterry87.github.io/designs-archive/work-in)
+- [Huskies Layout (preview)](https://cdterry87.github.io/designs-archive/huskies)
+- [Farm Layout (preview)](https://cdterry87.github.io/designs-archive/farm)
